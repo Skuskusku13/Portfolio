@@ -1,0 +1,36 @@
+/* police de titre */
+@import url(fonts/GrenzeGotisch-VariableFont_wght.ttf); 
+/* police de corps */
+@import url(fonts/Arima-VariableFont_wght.ttf);
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+header .menu-principal {
+    background-color: #18475c;
+}
+
+header .menu-principal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+header .menu-principal ul li {
+    padding: 20px 0;
+}
+
+header .menu-principal ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.5em;
+}
