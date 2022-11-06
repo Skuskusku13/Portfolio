@@ -2,6 +2,15 @@ h1, h2 {
     font-family: 'Grenze Gotisch', cursive;
 }
 
+p, li, a {
+    font-family: 'Arima', cursive;
+}
+
+.main-logo {
+    width: max-content;
+    margin: 30px auto;
+}
+
 .main-list section {
     padding: 10px;
     margin: 10px 0;
@@ -9,7 +18,6 @@ h1, h2 {
 
 .main-list section h2 {
     cursor: pointer;
-    width: max-content;
 }
 
 .main-list section .list-show{
@@ -18,4 +26,26 @@ h1, h2 {
 
 .list-title.active ~ .list-show {
     display: block;
+}
+
+.list-show {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.list-show ul{
+    margin-left: 10px;
+    list-style-type: "--";
+}
+
+.list-title::after {
+    /* content: "\279B"; */
+    content: "☟";
+    margin-left: 10px;
+    color: #18475c;
+}
+
+.list-title.active::after {
+    /* content: "\21E7"; */
+    content: "☝︎";
 }
