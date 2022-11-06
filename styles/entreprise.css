@@ -2,14 +2,20 @@ h1, h2 {
     font-family: 'Grenze Gotisch', cursive;
 }
 
-.main-list section h2 {
-    cursor: pointer;
+.main-list section {
+    padding: 10px;
+    margin: 10px 0;
 }
 
-.main-list section p{
+.main-list section h2 {
+    cursor: pointer;
+    width: max-content;
+}
+
+.main-list section .list-show{
     display: none;
 }
 
-.list-title.active ~ p {
+.list-title.active ~ .list-show {
     display: block;
 }

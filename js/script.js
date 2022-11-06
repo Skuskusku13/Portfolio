@@ -2,8 +2,8 @@ let list = document.querySelectorAll(".list-title");
 console.log(list)
 
 
-list.forEach(element => {
-    element.addEventListener('click', () => {
-        element.classList.toggle("active");
+list.forEach(elt => {
+    elt.addEventListener('click', () => {
+        elt.classList.toggle("active");
     })
 });
