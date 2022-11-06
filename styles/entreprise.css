@@ -1,0 +1,15 @@
+h1, h2 {
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.main-list section h2 {
+    cursor: pointer;
+}
+
+.main-list section p{
+    display: none;
+}
+
+.list-title.active ~ p {
+    display: block;
+}
