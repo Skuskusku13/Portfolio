@@ -1,0 +1,45 @@
+.presentation-ecole div{
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto 50px auto;
+}
+
+.presentation-ecole div p {
+    text-align: justify;
+    margin: auto;
+}
+
+.presentation-ecole div .info  {
+    padding-left: 50px;
+}
+
+.presentation-ecole div .compta  {
+    padding-right: 50px;
+}
+
+
+
+
+.coordonnees {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.coordonnees div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+.coordonnees div a {
+    text-decoration: none;
+    font-family: 'Arima', cursive;
+}
+
+.carte-ecole {
+    width: max-content;
+    margin: 0 auto;
+}

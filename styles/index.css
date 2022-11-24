@@ -1,7 +1,3 @@
-h1, h2 {
-    font-family: 'Grenze Gotisch', cursive;
-}
-
 h1{
     width: max-content;
     margin: 30px auto;
@@ -22,14 +18,6 @@ h2 {
     text-decoration: none;
     margin: 0 20px;
 }
-
-hr {
-    width: 50%;
-    margin: 30px auto;
-    border: 1px solid black;
-}
-
-
 
 .main-cards {
     padding: 5px;
