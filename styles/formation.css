@@ -1,3 +1,8 @@
+.presentation-ecole {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .presentation-ecole div{
     display: flex;
     max-width: 1000px;
@@ -9,6 +14,10 @@
     margin: auto;
 }
 
+.presentation-ecole img {
+    object-fit: contain;
+}
+
 .presentation-ecole div .info  {
     padding-left: 50px;
 }
@@ -18,7 +27,7 @@
 }
 
 
-
+/* carte + adresse + mail */
 
 .coordonnees {
     display: flex;
@@ -29,17 +38,96 @@
 .coordonnees div {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    font-size: 1.2em;
+    font-weight: 600;
     margin: auto;
 }
 
 .coordonnees div a {
     text-decoration: none;
+    color: #599ab7;
     font-family: 'Arima', cursive;
+}
+
+.first-coord {
+    padding: 30px 20px 30px 0;
+    text-align: right;
+}
+
+.second-coord {
+    text-align: left;
 }
 
 .carte-ecole {
     width: max-content;
     margin: 0 auto;
+}
+
+/* fin carte + adresse + mail */
+
+
+/* Intégration au cfa, liste compétences */
+
+.integrer-cfa {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.integrer-cfa div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.integrer-cfa-reverse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.integrer-cfa img {
+    object-fit: contain;
+}
+
+.integrer-cfa div ul{
+    font-family: 'Arima', cursive;
+    list-style-type: none;
+    margin: auto 30px;
+}
+
+.integrer-cfa div ul li{
+    max-width: 400px;
+}
+
+.integrer-cfa div ul li::before{
+    content: "\2014>  ";
+}
+
+/* Fin Intégration au cfa, liste compétences */
+
+
+/* vidéo de présentation */
+
+.video-presentation {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.video-presentation div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-presentation h2 {
+    margin: 50px 0;
+}
+
+.video-presentation iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 300px;
 }

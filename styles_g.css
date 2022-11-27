@@ -11,12 +11,12 @@
 
 body, html {
     height: 100%;
+    min-width: 380px;
 }
 
 main {
     max-width: 1500px;
-    min-width: 320px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto 70px auto;
     padding: 0 20px;
 }
 
@@ -39,13 +39,6 @@ header .menu-principal {
     background-color: #18475c;
 }
 
-header .menu-principal ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
 header .menu-principal ul li {
     padding: 20px 0;
 }
@@ -55,4 +48,25 @@ header .menu-principal ul li a{
     color: aliceblue;
     font-family: 'Grenze Gotisch', cursive;
     font-size: 1.5em;
+}
+
+
+@media all and (min-width: 800px) {
+
+    header .menu-principal ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    header .menu-principal  {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
 }
