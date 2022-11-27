@@ -1,5 +1,5 @@
 /* police de titre */
-@import url(fonts/GrenzeGotisch-VariableFont_wght.ttf); 
+@import url(fonts/GrenzeGotisch-VariableFont_wght.ttf);
 /* police de corps */
 @import url(fonts/Arima-VariableFont_wght.ttf);
 
@@ -43,7 +43,7 @@ header .menu-principal ul li {
     padding: 20px 0;
 }
 
-header .menu-principal ul li a{
+header .menu-principal ul li a {
     text-decoration: none;
     color: aliceblue;
     font-family: 'Grenze Gotisch', cursive;
@@ -59,14 +59,95 @@ header .menu-principal ul li a{
         justify-content: space-evenly;
         list-style-type: none;
     }
+
+    i {
+        display: none;
+    }
 }
+
+
+/* le menu burger pour la version responsive */
 
 @media all and (max-width: 800px) {
-    header .menu-principal  {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
+
+    main {
+        margin-top: 100px;
     }
 
+    header .menu-principal {
+        min-width: 380px;
+        height: 70px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    header .menu-principal ul {
+        min-height: 100vh;
+        padding-left: 20px;
+        transition: 0.3s ease-in;
+        list-style-type: none;
+        background-color: #18475c;
+
+    }
+
+    /* test */
+
+    i {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    i.open::after {
+        font-size: 3em;
+        font-style: normal;
+        content: "\2630";
+    }
+
+    i.close::after {
+        content: "\0078";
+        font-size: 3em;
+        font-style: normal;
+        margin-right: 10px;
+    }
+
+    i.close {
+        transition: 0.3s ease-out;
+        display: none;
+    }
+
+    i.open.active {
+        display: none;
+    }
+
+    i.open.active+i.close {
+        display: block;
+        z-index: 2;
+    }
+
+    i.open.active>.menu-principal {
+        min-height: 100%;
+    }
+
+    i.open~.openClose {
+        transform: translate(-100%);
+    }
+
+    i.open.active~.openClose {
+        transform: translate(0);
+        right: 100%;
+        left: 0%;
+    }
+
+    i.open.active>i.close {
+        display: block;
+    }
 }
+
+/* fin du menu burger pour la version responsive */

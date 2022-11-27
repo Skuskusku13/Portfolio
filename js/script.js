@@ -1,5 +1,5 @@
 let list = document.querySelectorAll(".list-title");
-console.log(list)
+// console.log(list)
 
 
 list.forEach(elt => {
@@ -7,3 +7,21 @@ list.forEach(elt => {
         elt.classList.toggle("active");
     })
 });
+
+
+
+// menu burger 
+
+let openBurger = document.querySelector(".open");
+let closeBurger = document.querySelector(".close");
+
+
+openBurger.addEventListener('click', () => {
+    openBurger.classList.toggle('active');
+    
+})
+
+closeBurger.addEventListener('click', () => {
+    console.log("ok")
+    openBurger.classList.toggle('active');
+})
