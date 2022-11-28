@@ -4,6 +4,7 @@ if(isset($_POST['Valider'])){
     $nom = trim(htmlspecialchars($_POST['nom']));
     $email = trim(htmlspecialchars($_POST['email']));
     $tel = trim(htmlspecialchars($_POST['tel']));
+    $sujet = trim(htmlspecialchars($_POST['sujet']));
     $mess = trim(htmlspecialchars(nl2br($_POST['mess'])));
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {

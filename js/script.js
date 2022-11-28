@@ -27,6 +27,8 @@ closeBurger.addEventListener('click', () => {
 })
 
 
+// traitement du formulaire de contact 
+
 let Error = document.getElementById('Error');
 
 function traiterEmail() {
@@ -37,14 +39,14 @@ function traiterEmail() {
     } else {
         document.getElementById("email").style.backgroundColor = "#e24d36";
         Error.innerHTML="Email invalide"
-      }
+    }
 }
 
 function traiterNom() {
     let nom = document.getElementById('nom').value;
 
     if (nom != "") {
-        document.getElementById("nom").style.backgroundColor = "#71bf71";
+        document.getElementById("nom").classList.add('validName');
     } else {
         document.getElementById("nom").style.backgroundColor = "#e24d36";
         Error.innerHTML="Veuillez mettre un nom";
