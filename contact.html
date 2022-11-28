@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_g.css">
-    <link rel="stylesheet" href="styles/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_g.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="menu-principal">
-            <i class="open"></i>
-            <i class="close"></i>
-            <ul class="openClose">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="formation.html">Formation</a></li>
-                <li><a href="entreprise.html">Entreprise</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="veilles.html">Veilles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="menu-principal">
+        <i class="open"></i>
+        <i class="close"></i>
+        <ul class="openClose">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="formation.html">Formation</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="veilles.html">Veilles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Page Contact</h1>
+      <h1>Page Contact</h1>
+
+      <h2>Vous pouvez me contacter directement en remplissant ce formulaire</h2>
+
+      <form action="verif.php" method="post">
+        <p id="Error"></p>
+        <table>
+          <tr>
+            <td>Nom / Prénom ou Entreprise</td>
+            <td>
+              <input id="nom" type="text" name="nom" onblur="traiterNom()" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                onblur="traiterEmail()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Téléphone</td>
+            <td><input id="tel" type="text" name="tel" onblur="traiterTel()"/></td>
+          </tr>
+          <tr>
+            <td>Votre Message</td>
+            <td>
+              <textarea id="mess" name="mess" onblur="traiterMess()"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" value="Annuler" name="Annuler" /></td>
+            <td><input type="submit" value="Valider" name="Valider" /></td>
+          </tr>
+        </table>
+      </form>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="js/script.js" defer></script>
-</body>
+  </body>
 </html>

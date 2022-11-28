@@ -1,0 +1,74 @@
+h2 {
+    text-align: center;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    color: red;
+}
+
+form {
+    width: max-content;
+    margin: 40px auto;
+}
+
+textarea {
+    border-radius: 10px;
+    border: 1px solid #18475c;
+    height: 100px;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #18475c;
+    color: aliceblue;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.2em;
+}
+
+input#mess {
+    word-break: break-word;
+    height: 180px;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #18475c;
+}
+
+
+@media all and (min-width: 500px) {
+    textarea {
+        width: 100%;
+        resize: vertical;
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 500px) {
+
+    form {
+        max-width: 320px;
+    }
+
+    td {
+        text-align: center;
+        font-family: 'Arima', cursive;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        padding: 5px;
+        resize: vertical;
+        width: 100%;
+    }
+}
