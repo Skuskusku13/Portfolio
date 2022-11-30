@@ -1,3 +1,28 @@
+
+// menu burger 
+
+let openBurger = document.querySelector(".open");
+let closeBurger = document.querySelector(".close");
+let menu = document.querySelector(".menu");
+
+
+openBurger.addEventListener('click', () => {
+    menu.classList.add('active')
+    openBurger.classList.add('none');
+    closeBurger.classList.add('block');
+    
+})
+
+closeBurger.addEventListener('click', () => {
+    menu.classList.remove('active');
+    closeBurger.classList.remove('block');
+    openBurger.classList.remove('none');
+    
+})
+
+
+
+
 let list = document.querySelectorAll(".list-title");
 // console.log(list)
 
@@ -8,23 +33,6 @@ list.forEach(elt => {
     })
 });
 
-
-
-// menu burger 
-
-let openBurger = document.querySelector(".open");
-let closeBurger = document.querySelector(".close");
-
-
-openBurger.addEventListener('click', () => {
-    openBurger.classList.toggle('active');
-    
-})
-
-closeBurger.addEventListener('click', () => {
-    console.log("ok")
-    openBurger.classList.toggle('active');
-})
 
 
 // traitement du formulaire de contact 

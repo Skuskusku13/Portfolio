@@ -1,0 +1,322 @@
+@media screen and (max-width: 375px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 70px;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    header .menu-principal .menu {
+        padding-left: 20px;
+        transition: 0.3s ease-in;
+        position: absolute;
+        background-color: #18475c;
+        transition: 0.3s ease-in;
+        width: 100%;
+        min-height: 100vh;
+        transform: translate(-100%);
+    }
+
+    header .menu-principal .menu.active {
+        transition: 0.3s ease-in;
+        transform: translate(0%);
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 50px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, i.close {
+        font-size: 100%;
+        top: 45%;
+        right: 0%;
+    }
+
+    header .menu-principal .pages-menu {
+        font-size: 90%;
+    }
+
+    /* FIN NAVBAR */
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 70px;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    header .menu-principal .menu {
+        padding-left: 20px;
+        transition: 0.3s ease-in;
+        position: absolute;
+        background-color: #18475c;
+        transition: 0.3s ease-in;
+        width: 100%;
+        min-height: 100vh;
+        transform: translate(-100%);
+    }
+
+    header .menu-principal .menu.active {
+        transition: 0.3s ease-in;
+        transform: translate(0%);
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 50px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, i.close {
+        font-size: 110%;
+        top: 45%;
+        right: 0%;
+    }
+
+    header .menu-principal .pages-menu {
+        font-size: 110%;
+    }
+
+    /* FIN NAVBAR */
+
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 80px;
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    header .menu-principal .menu {
+        padding-left: 20px;
+        transition: 0.3s ease-in;
+        position: absolute;
+        background-color: #18475c;
+        transition: 0.3s ease-in;
+        width: 100%;
+        min-height: 100vh;
+        transform: translate(-100%);
+    }
+
+    header .menu-principal .menu.active {
+        transition: 0.3s ease-in;
+        transform: translate(0%);
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 60px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, i.close {
+        font-size: 130%;
+        top: 45%;
+        right: 0%;
+    }
+
+    header .menu-principal .pages-menu {
+        font-size: 130%;
+    }
+
+    /* FIN NAVBAR */
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 80px;
+        display: flex;
+        left: 0;
+        top: 0;
+    }
+
+    header .menu-principal .menu {
+        display: flex;
+        margin: auto 15px auto auto;
+    }
+
+    header .menu-principal .menu li {
+        padding: 10px;
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto 15px auto 15px;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 60px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, header i.close {
+        display: none;
+    }
+
+    header .menu-principal .pages-menu {
+        padding: 5px 10px;
+        font-size: 130%;
+    }
+
+    /* FIN NAVBAR */
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 100px;
+        display: flex;
+        left: 0;
+        top: 0;
+    }
+
+    header .menu-principal .menu {
+        display: flex;
+        margin: auto 15px auto auto;
+    }
+
+    header .menu-principal .menu li {
+        padding: 10px;
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto 15px auto 15px;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 80px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, header i.close {
+        display: none;
+    }
+
+    header .menu-principal .pages-menu {
+        padding: 10px 15px;
+        font-size: 160%;
+    }
+
+    /* FIN NAVBAR */
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    /* NAVBAR */
+
+    header .menu-principal {
+        height: 150px;
+        display: flex;
+        left: 0;
+        top: 0;
+    }
+
+    header .menu-principal .menu {
+        display: flex;
+        margin: auto 15px auto auto;
+    }
+
+    header .menu-principal .menu li {
+        padding: 10px;
+    }
+
+    header .menu-principal .logo-navbar {
+        height: 100%;
+        display: flex;
+        margin: auto 15px auto 15px;
+    }
+
+    header .menu-principal .logo-navbar a {
+        margin: auto 10px;
+    }
+
+    header .menu-principal .logo-navbar .navbar-image {
+        height: 120px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    header i.open, header i.close {
+        display: none;
+    }
+
+    header .menu-principal .pages-menu {
+        padding: 15px 20px;
+        font-size: 200%;
+    }
+
+    /* FIN NAVBAR */
+}

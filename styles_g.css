@@ -9,9 +9,12 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 body, html {
     height: 100%;
-    min-width: 380px;
 }
 
 main {
@@ -35,119 +38,61 @@ hr {
     background-color: black;
 }
 
+/* NAVABAR */
+
 header .menu-principal {
     background-color: #18475c;
+    width: 100%;
 }
 
-header .menu-principal ul li {
+header .menu-principal .menu {
+    list-style-type: none;
+}
+
+header .menu-principal .menu li {
     padding: 20px 0;
 }
 
-header .menu-principal ul li a {
+header .menu-principal .menu li a {
     text-decoration: none;
     color: aliceblue;
     font-family: 'Grenze Gotisch', cursive;
-    font-size: 1.5em;
 }
 
-
-@media all and (min-width: 800px) {
-
-    header .menu-principal ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        list-style-type: none;
-    }
-
-    i {
-        display: none;
-    }
+header .menu-principal i {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: aliceblue;
+    cursor: pointer;
 }
 
-
-/* le menu burger pour la version responsive */
-
-@media all and (max-width: 800px) {
-
-    main {
-        margin-top: 100px;
-    }
-
-    header .menu-principal {
-        min-width: 380px;
-        height: 70px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
-        z-index: 1;
-    }
-
-    header .menu-principal ul {
-        min-height: 100vh;
-        padding-left: 20px;
-        transition: 0.3s ease-in;
-        list-style-type: none;
-        background-color: #18475c;
-
-    }
-
-    /* test */
-
-    i {
-        transform: translate(-50%, -50%);
-        position: absolute;
-        right: 2%;
-        top: 50%;
-        color: aliceblue;
-        cursor: pointer;
-    }
-
-    i.open::after {
-        font-size: 3em;
-        font-style: normal;
-        content: "\2630";
-    }
-
-    i.close::after {
-        content: "\0078";
-        font-size: 3em;
-        font-style: normal;
-        margin-right: 10px;
-    }
-
-    i.close {
-        transition: 0.3s ease-out;
-        display: none;
-    }
-
-    i.open.active {
-        display: none;
-    }
-
-    i.open.active+i.close {
-        display: block;
-        z-index: 2;
-    }
-
-    i.open.active>.menu-principal {
-        min-height: 100%;
-    }
-
-    i.open~.openClose {
-        transform: translate(-100%);
-    }
-
-    i.open.active~.openClose {
-        transform: translate(0);
-        right: 100%;
-        left: 0%;
-    }
-
-    i.open.active>i.close {
-        display: block;
-    }
+header i.open::after {
+    content: "\2630";
+    font-size: 3em;
+    font-style: normal;
 }
 
-/* fin du menu burger pour la version responsive */
+header i.close::after {
+    content: "\0078";
+    font-size: 3em;
+    font-style: normal;
+    margin-right: 10px;
+} 
+
+header i.close {
+    display: none;
+}
+
+header i.open.none {
+    display: none;
+}
+
+header i.close.block {
+    display: block;
+}
+
+header .menu-principal .pages-menu {
+    font-size: 1em;
+}
+
+/* FIN NAVBAR */

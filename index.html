@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- mon css -->
     <link rel="stylesheet" href="styles_g.css" />
+    <link rel="stylesheet" href="responsive/styles_g.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
       <nav class="menu-principal">
+        <div class="logo-navbar">
+          <a href="index.html">
+            <img class="navbar-image" src="www/cv.png" alt="logo du site" />
+          </a>
+        </div>
         <i class="open"></i>
         <i class="close"></i>
-        <ul class="openClose">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="formation.html">Formation</a></li>
-          <li><a href="entreprise.html">Entreprise</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="veilles.html">Veilles</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul class="menu">
+          <li><a class="pages-menu" href="index.html">Home</a></li>
+          <li><a class="pages-menu" href="cv.html">CV</a></li>
+          <li><a class="pages-menu" href="formation.html">Formation</a></li>
+          <li><a class="pages-menu" href="entreprise.html">Entreprise</a></li>
+          <li><a class="pages-menu" href="projets.html">Projets</a></li>
+          <li><a class="pages-menu" href="veilles.html">Veilles</a></li>
+          <li><a class="pages-menu" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -44,10 +51,9 @@
         </a>
       </div>
 
-      <hr>
+      <hr />
 
       <div class="main-cards">
-
         <h2>CV</h2>
         <div class="card-child">
           <div>
@@ -58,11 +64,16 @@
             <a href="cv.html">En savoir plus</a>
           </p>
         </div>
-        
+
         <h2>Formation</h2>
         <div class="card-child">
           <div>
-            <img src="www/formation.png" alt="logo formation" width="150" height="150"/>
+            <img
+              src="www/formation.png"
+              alt="logo formation"
+              width="150"
+              height="150"
+            />
             <p>Ici je parle de ma formation en informatique</p>
           </div>
           <p class="card-link">
@@ -73,7 +84,12 @@
         <h2>Entreprise</h2>
         <div class="card-child">
           <div>
-            <img src="www/entreprise.png" alt="logo entreprise" width="150" height="150"/>
+            <img
+              src="www/entreprise.png"
+              alt="logo entreprise"
+              width="150"
+              height="150"
+            />
             <p>Ici je parle de mon entreprise</p>
           </div>
           <p class="card-link">
@@ -84,7 +100,12 @@
         <h2>Projets</h2>
         <div class="card-child">
           <div>
-            <img src="www/projet.png" alt="logo projets" width="150" height="150"/>
+            <img
+              src="www/projet.png"
+              alt="logo projets"
+              width="150"
+              height="150"
+            />
             <p>Ici je parle de mes projets</p>
           </div>
           <p class="card-link">
@@ -95,7 +116,12 @@
         <h2>Veilles</h2>
         <div class="card-child">
           <div>
-            <img src="www/veilles.png" alt="logo veilles" width="150" height="150"/>
+            <img
+              src="www/veilles.png"
+              alt="logo veilles"
+              width="150"
+              height="150"
+            />
             <p>Ici je parle des veilles technologiques</p>
           </div>
           <p class="card-link">
@@ -106,19 +132,23 @@
         <h2>Contact</h2>
         <div class="card-child">
           <div>
-            <img src="www/contact.png" alt="logo contact" width="150" height="150"/>
+            <img
+              src="www/contact.png"
+              alt="logo contact"
+              width="150"
+              height="150"
+            />
             <p>Ici j'explique comment me contacter via la page adequat</p>
           </div>
           <p class="card-link">
             <a href="contact.html">En savoir plus</a>
           </p>
         </div>
-
       </div>
     </main>
 
     <footer></footer>
-    
+
     <script src="js/script.js" defer></script>
   </body>
 </html>
