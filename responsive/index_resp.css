@@ -1,0 +1,267 @@
+@media screen and (max-width: 375px) {
+    main {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 100%;
+    }
+
+    h2 {
+        font-size: 90%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 35px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 70%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 70%;
+        margin-right: 0px;
+    }
+
+    .card-link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 80px;
+        height: 80px;
+    }
+
+    /* image en 80x80 */
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    main {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 110%;
+    }
+
+    h2 {
+        font-size: 90%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 90%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 80%;
+        margin-right: 10px;
+    }
+
+    .card-link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    main {
+        padding: 0 35px;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 110%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 90%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 80%;
+        margin-right: 10px;
+    }
+
+    .card-link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 0 50px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    h2 {
+        font-size: 130%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 100%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 90%;
+    }
+
+    .card-link {
+        margin: auto 15px auto auto;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    main {
+        padding: 0 100px;
+    }
+
+    h1 {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 160%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 110%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 100%;
+    }
+
+    .card-link {
+        margin: auto 15px auto auto;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    main {
+        padding: 0 150px;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    .linkl-logo, .git-logo {
+        height: 55px;
+        object-fit: contain;
+    }
+
+    .main-cards {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    .card-link a {
+        font-size: 120%;
+    }
+
+    .main-cards .card-child div p {
+        font-size: 110%;
+    }
+
+    .card-link {
+        margin: auto 15px auto auto;
+    }
+
+    .card-logo {
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+    }
+
+}

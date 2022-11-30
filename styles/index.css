@@ -1,4 +1,4 @@
-h1{
+h1 {
     width: max-content;
     margin: 30px auto;
     font-size: 2.7em;
@@ -14,7 +14,7 @@ h2 {
     margin: 0 auto;
 }
 
-.logo-redirection a{
+.logo-redirection a {
     text-decoration: none;
     margin: 0 20px;
 }
@@ -25,11 +25,18 @@ h2 {
 
 .main-cards .card-child {
     position: relative;
-    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 50px;
     box-shadow: 2px 2px 10px 12px rgba(150, 150, 150, 0.131);
     border-radius: 10px;
+}
+
+body.dark .main-cards .card-child {
+    box-shadow: 2px 2px 10px 12px rgba(139, 126, 126, 0.131);
+}
+
+.card-child {
+    display: flex;
 }
 
 .main-cards .card-child div {
@@ -39,12 +46,6 @@ h2 {
 .main-cards .card-child img {
     padding: 10px;
     object-fit: cover;
-}
-
-.card-link {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
 }
 
 .card-link a {
@@ -59,13 +60,10 @@ h2 {
 
 .main-cards .card-child div p {
     font-family: 'Arima', cursive;
+    font-size: 1em;
     margin: auto 0;
 }
 
-
-@media all and (max-width: 600px) {
-
-    h1 {
-        font-size: 2em;
-    }
+.card-link {
+    margin: auto 15px auto auto;
 }

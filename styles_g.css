@@ -10,7 +10,38 @@
 }
 
 body {
+    transition: 0.5s ease-in-out;
     overflow-x: hidden;
+    min-width: 320px;
+}
+
+.place-colors {
+    position: relative;
+}
+
+.place-colors .colors {
+    background-color: #000000cf;
+    color: aliceblue;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    position: absolute;
+    top: 2%;
+}
+
+body.dark {
+    transition: 0.5s ease-in-out;
+    background-color: #000000cf;
+    color: aliceblue;
+    /* #18475c87 pour le js */
+}
+
+body.dark .menu-principal{
+    transition: 0.5s ease-in-out;
+    background-color:#18475c87;
+    color: aliceblue;
+    /*  pour le js */
 }
 
 body, html {
@@ -18,9 +49,7 @@ body, html {
 }
 
 main {
-    max-width: 1500px;
     margin: 0 auto 70px auto;
-    padding: 0 20px;
 }
 
 h1, h2 {

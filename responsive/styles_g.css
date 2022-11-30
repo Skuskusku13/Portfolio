@@ -54,6 +54,16 @@
 
     /* FIN NAVBAR */
 
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 50%;
+        right: 5%;
+    }
+
+    /* FINDARKTHEME */
+
 }
 
 
@@ -113,6 +123,15 @@
 
     /* FIN NAVBAR */
 
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 60%;
+        right: 5%;
+    }
+
+    /* FINDARKTHEME */
 }
 
 
@@ -172,6 +191,16 @@
 
     /* FIN NAVBAR */
 
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 70%;
+        right: 5%;
+    }
+
+    /* FINDARKTHEME */
+
 }
 
 
@@ -221,6 +250,16 @@
     }
 
     /* FIN NAVBAR */
+
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 80%;
+        right: 5%;
+    }
+
+    /* FINDARKTHEME */
 }
 
 
@@ -270,6 +309,16 @@
     }
 
     /* FIN NAVBAR */
+
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 90%;
+        right: 3%;
+    }
+
+    /* FINDARKTHEME */
 }
 
 
@@ -319,4 +368,14 @@
     }
 
     /* FIN NAVBAR */
+
+
+    /* DARKTHEME */
+
+    .place-colors .colors {
+        font-size: 100%;
+        right: 3%;
+    }
+
+    /* FINDARKTHEME */
 }
