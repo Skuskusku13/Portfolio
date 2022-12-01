@@ -20,8 +20,6 @@ body {
 }
 
 .place-colors .colors {
-    background-color: #000000cf;
-    color: aliceblue;
     border-radius: 25px;
     padding: 10px;
     margin: 10px 0;
@@ -35,6 +33,16 @@ body.dark {
     background-color: #000000cf;
     color: aliceblue;
     /* #18475c87 pour le js */
+}
+
+.darkmode {
+    background-color: #F1F1F1;
+    color: #000000cf;
+}
+
+.lightmode {
+    background-color: #000000cf;
+    color: aliceblue;
 }
 
 body.dark .menu-principal{

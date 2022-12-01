@@ -18,43 +18,43 @@ closeBurger.addEventListener("click", () => {
 
 // changement de couleur en dark
 
+
 let body = document.querySelector("body");
 let colors = document.querySelector(".colors");
+let menuPrincipal = document.querySelector(".menu-principal");
 
 let rememberColors = document.querySelector(".colors").textContent;
 
-function dark() {
-  if (rememberColors == "DARK") {
-    colors.innerHTML = "LIGHT";
-    colors.style.backgroundColor = "#F1F1F1";
-    colors.style.color = "black";
-  }
-}
-
-// rememberColors.addEventListener('click', () => {
-//     rem = rememberColors
-// })
-
-// if(rem == "LIGHT") {
-//     colors.innerHTML="LIGHT";
-//     colors.style.backgroundColor="#F1F1F1";
-//     colors.style.color="black";
-// }
+// evenement au clic du bouton
 
 colors.addEventListener("click", () => {
   body.classList.toggle("dark");
   if (colors.textContent == "DARK") {
     colors.innerHTML = "LIGHT";
-    colors.style.backgroundColor = "#F1F1F1";
-    colors.style.color = "black";
+    colors.classList.remove("lightmode")
+    colors.classList.add("darkmode")
+    localStorage.removeItem("light")
+    localStorage.setItem("dark", true)
   } else {
     colors.innerHTML = "DARK";
-    colors.style.backgroundColor = "#000000cf";
-    colors.style.color = "aliceblue";
+    colors.classList.remove("darkmode")
+    colors.classList.add("lightmode")
+    localStorage.removeItem("dark")
   }
 });
 
-// console.log(rem);
+// lis si le bouton à déjà stocké un localstorage  
+
+if(localStorage.getItem("dark")) {
+  body.style.transition="none";
+  menuPrincipal.style.transition="none";
+  colors.innerHTML = "LIGHT";
+  body.classList.add("dark");
+  colors.classList.remove("lightmode")
+  colors.classList.add("darkmode")
+} 
+
+// fin des changements de couleurs
 
 let list = document.querySelectorAll(".list-title");
 // console.log(list)
