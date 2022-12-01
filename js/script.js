@@ -35,8 +35,8 @@ colors.addEventListener("click", () => {
     colors.innerHTML = "LIGHT";
     colors.classList.remove("lightmode")
     colors.classList.add("darkmode")
-    gitblack.style.display="visible";
-    gitwhite.style.display="none";
+    // gitblack.style.display="visible";
+    // gitwhite.style.display="none";
     localStorage.removeItem("light")
     localStorage.setItem("dark", true)
   } else {
@@ -56,8 +56,8 @@ if(localStorage.getItem("dark")) {
   body.classList.add("dark");
   colors.classList.remove("lightmode")
   colors.classList.add("darkmode")
-  gitwhite.style.display="visible"
-  gitblack.style.display="none"
+  // gitwhite.style.display="visible"
+  // gitblack.style.display="none"
 } 
 
 // fin des changements de couleurs

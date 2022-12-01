@@ -1,5 +1,21 @@
 @media screen and (max-width: 375px) {
+    
+    main {
+        padding: 0 10px;
+    }
 
+    h1.titre-page {
+        font-size: 120%;
+    }
+
+    h2.sous-titre {
+        font-size: 100%;
+    }
+
+    h3.titre-lambda {
+        font-size: 90%;
+    }
+    
     /* NAVBAR */
 
     header .menu-principal {
@@ -69,6 +85,22 @@
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
 
+    main {
+        padding: 0 15px;
+    }
+
+    h1.titre-page {
+        font-size: 130%;
+    }
+
+    h2.sous-titre {
+        font-size: 100%;
+    }
+
+    h3.titre-lambda {
+        font-size: 100%;
+    }
+
     /* NAVBAR */
 
     header .menu-principal {
@@ -136,6 +168,22 @@
 
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
+
+    main {
+        padding: 0 35px;
+    }
+
+    h1.titre-page {
+        font-size: 150%;
+    }
+
+    h2.sous-titre {
+        font-size: 110%;
+    }
+
+    h3.titre-lambda {
+        font-size: 110%;
+    }
 
     /* NAVBAR */
 
@@ -206,6 +254,22 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    main {
+        padding: 0 50px;
+    }
+
+    h1.titre-page {
+        font-size: 200%;
+    }
+
+    h2.sous-titre {
+        font-size: 130%;
+    }
+
+    h3.titre-lambda {
+        font-size: 130%;
+    }
+
     /* NAVBAR */
 
     header .menu-principal {
@@ -265,6 +329,22 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 
+    main {
+        padding: 0 100px;
+    }
+
+    h1.titre-page {
+        font-size: 250%;
+    }
+
+    h2.sous-titre {
+        font-size: 160%;
+    }
+
+    h3.titre-lambda {
+        font-size: 160%;
+    }
+
     /* NAVBAR */
 
     header .menu-principal {
@@ -323,6 +403,22 @@
 
 
 @media screen and (min-width: 1440px) {
+
+    main {
+        padding: 0 150px;
+    }
+
+    h1.titre-page {
+        font-size: 300%;
+    }
+
+    h2.sous-titre {
+        font-size: 200%;
+    }
+
+    h3.titre-lambda {
+        font-size: 200%;
+    }
 
     /* NAVBAR */
 

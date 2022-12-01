@@ -45,9 +45,9 @@ body.dark {
     color: aliceblue;
 }
 
-body.dark .menu-principal{
+body.dark .menu-principal {
     transition: 0.5s ease-in-out;
-    background-color:#18475c87;
+    background-color: #18475c87;
     color: aliceblue;
     /*  pour le js */
 }
@@ -60,12 +60,25 @@ main {
     margin: 0 auto 70px auto;
 }
 
-h1, h2 {
+h1.titre-page, h2.sous-titre, h3.titre-lambda {
     font-family: 'Grenze Gotisch', cursive;
+}
+
+.titre-page {
+    font-size: 2.7em;
+}
+
+.sous-titre {
+    font-size: 2em;
+}
+
+.titre-lambda {
+    font-size: 1.5;
 }
 
 p {
     font-family: 'Arima', cursive;
+    font-size: 1em;
 }
 
 hr {
@@ -114,7 +127,7 @@ header i.close::after {
     font-size: 3em;
     font-style: normal;
     margin-right: 10px;
-} 
+}
 
 header i.close {
     display: none;

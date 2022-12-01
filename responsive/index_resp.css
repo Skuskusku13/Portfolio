@@ -1,14 +1,8 @@
 @media screen and (max-width: 375px) {
-    main {
-        padding: 0 10px;
-    }
+
 
     h1 {
         font-size: 100%;
-    }
-
-    h2 {
-        font-size: 90%;
     }
 
     .linkl-logo, .git-logo {
@@ -46,17 +40,6 @@
 
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
-    main {
-        padding: 0 15px;
-    }
-
-    h1 {
-        font-size: 110%;
-    }
-
-    h2 {
-        font-size: 90%;
-    }
 
     .linkl-logo, .git-logo {
         height: 40px;
@@ -92,17 +75,6 @@
 
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-    main {
-        padding: 0 35px;
-    }
-
-    h1 {
-        font-size: 150%;
-    }
-
-    h2 {
-        font-size: 110%;
-    }
 
     .linkl-logo, .git-logo {
         height: 45px;
@@ -137,17 +109,6 @@
 
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    main {
-        padding: 0 50px;
-    }
-
-    h1 {
-        font-size: 200%;
-    }
-
-    h2 {
-        font-size: 130%;
-    }
 
     .linkl-logo, .git-logo {
         height: 45px;
@@ -180,18 +141,6 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 
-    main {
-        padding: 0 100px;
-    }
-
-    h1 {
-        font-size: 250%;
-    }
-
-    h2 {
-        font-size: 160%;
-    }
-
     .linkl-logo, .git-logo {
         height: 50px;
         object-fit: contain;
@@ -223,18 +172,6 @@
 
 
 @media screen and (min-width: 1440px) {
-
-    main {
-        padding: 0 150px;
-    }
-
-    h1 {
-        font-size: 300%;
-    }
-
-    h2 {
-        font-size: 200%;
-    }
 
     .linkl-logo, .git-logo {
         height: 55px;

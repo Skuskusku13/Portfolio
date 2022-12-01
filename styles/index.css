@@ -1,10 +1,9 @@
-h1 {
+h1.titre-page {
     width: max-content;
     margin: 30px auto;
-    font-size: 2.7em;
 }
 
-h2 {
+h2.sous-titre {
     text-align: center;
     margin-bottom: 15px;
 }
@@ -19,9 +18,17 @@ h2 {
     margin: 0 20px;
 }
 
-body .dark .git-white {
+/* body .git-logo.git-white {
     display: none;
 }
+
+body.dark .git-logo.git-noir {
+    display: none;
+}
+
+body.dark .git-logo .git-white {
+    display: none;
+} */
 
 .main-cards {
     padding: 5px;
