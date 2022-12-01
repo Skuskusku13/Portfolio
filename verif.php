@@ -9,7 +9,7 @@ if(isset($_POST['Valider'])){
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         if(!empty($nom) &&  (!empty($email) || !empty($tel)) && !empty($mess)){
-            echo "<p>Votre message a bien été envoyé</p>";
+            // echo "<p>Votre message a bien été envoyé</p>";
     
         } else {
             header("Location: contact.html");
@@ -28,6 +28,7 @@ if(isset($_POST['Valider'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_g.css" />
     <link rel="stylesheet" href="responsive/styles_g.css" />
     <title>Message Envoyé</title>
 </head>

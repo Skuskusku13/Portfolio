@@ -19,6 +19,10 @@ h2 {
     margin: 0 20px;
 }
 
+body .dark .git-white {
+    display: none;
+}
+
 .main-cards {
     padding: 5px;
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_g.css" />
+    <link rel="stylesheet" href="responsive/styles_g.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu-principal">
+        <div class="logo-navbar">
+          <a href="index.html">
+            <img class="navbar-image" src="www/cv.png" alt="logo du site" />
+          </a>
+        </div>
+        <i class="open"></i>
+        <i class="close"></i>
+        <ul class="menu">
+          <li><a class="pages-menu" href="index.html">Home</a></li>
+          <li><a class="pages-menu" href="cv.html">CV</a></li>
+          <li><a class="pages-menu" href="formation.html">Formation</a></li>
+          <li><a class="pages-menu" href="entreprise.html">Entreprise</a></li>
+          <li><a class="pages-menu" href="projets.html">Projets</a></li>
+          <li><a class="pages-menu" href="veilles.html">Veilles</a></li>
+          <li><a class="pages-menu" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="place-colors">
+      <a class="colors lightmode">DARK</a>
+    </div>
+
+    <main>
+      <h1>Page Contact</h1>
+
+      <h2>Vous pouvez me contacter directement en remplissant ce formulaire</h2>
+
+      <form id="contact-form">
+        <input type="hidden" name="contact_number" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send" />
+      </form>
+    </main>
+
+    <footer></footer>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("Y8-HiU3pE1p14drXw");
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("contact_service", "contact_form", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+  </body>
+</html>

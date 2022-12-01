@@ -22,6 +22,8 @@ closeBurger.addEventListener("click", () => {
 let body = document.querySelector("body");
 let colors = document.querySelector(".colors");
 let menuPrincipal = document.querySelector(".menu-principal");
+let gitblack = document.querySelector(".git-black");
+let gitwhite = document.querySelector(".git-white");
 
 let rememberColors = document.querySelector(".colors").textContent;
 
@@ -33,6 +35,8 @@ colors.addEventListener("click", () => {
     colors.innerHTML = "LIGHT";
     colors.classList.remove("lightmode")
     colors.classList.add("darkmode")
+    gitblack.style.display="visible";
+    gitwhite.style.display="none";
     localStorage.removeItem("light")
     localStorage.setItem("dark", true)
   } else {
@@ -52,6 +56,8 @@ if(localStorage.getItem("dark")) {
   body.classList.add("dark");
   colors.classList.remove("lightmode")
   colors.classList.add("darkmode")
+  gitwhite.style.display="visible"
+  gitblack.style.display="none"
 } 
 
 // fin des changements de couleurs
