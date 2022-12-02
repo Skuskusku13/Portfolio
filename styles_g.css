@@ -13,6 +13,8 @@ body {
     transition: 0.5s ease-in-out;
     overflow-x: hidden;
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
 }
 
 .place-colors {
@@ -57,7 +59,8 @@ body, html {
 }
 
 main {
-    margin: 0 auto 70px auto;
+    /* min-height: 100%; */
+    margin: 0 auto 0 auto;
 }
 
 h1.titre-page, h2.sous-titre, h3.titre-lambda {
@@ -146,3 +149,23 @@ header .menu-principal .pages-menu {
 }
 
 /* FIN NAVBAR */
+
+/* FOOTER */
+
+footer {
+    color: aliceblue;
+    padding: 15px;
+    background-color: #18475c;
+}
+
+footer div {
+    display: flex;
+    /* justify-content: space-between; */
+}
+/* 
+footer div p {
+    font-family: 'Grenze Gotisch', cursive;
+} */
+
+
+/* FIN FOOTER */

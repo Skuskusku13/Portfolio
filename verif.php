@@ -10,7 +10,7 @@ if(isset($_POST['Valider'])){
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         if(!empty($nom) &&  (!empty($email) || !empty($tel)) && !empty($mess)){
             // echo "<p>Votre message a bien été envoyé</p>";
-    
+           echo '<a href="mailto:danlevy149@gmail.com?subject='.$sujet.' / '.$tel.' / '.$nom.'&body='.$mess.'>ici</a>';
         } else {
             header("Location: contact.html");
         }
