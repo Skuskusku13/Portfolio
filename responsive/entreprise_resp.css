@@ -1,27 +1,69 @@
 @media screen and (max-width: 375px) {
 
+    .main-logo img {
+        padding: 20px;
+        width: 100%;
+    }
+
 }
 
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
 
+    .main-logo img {
+        padding: 20px;
+        width: 100%;
+    }
 }
 
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
-
+    .main-logo {
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+    .main-logo img {
+        padding: 20px;
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+    .main-logo {
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+    .main-logo img {
+        padding: 20px;
+        width: 400px;
+    }
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-
+    .main-logo {
+        width: max-content;
+        margin: 0 auto;
+    }
+    
+    .main-logo img {
+        padding: 20px;
+        width: 400px;
+    }
 }
 
 
 @media screen and (min-width: 1440px) {
+    .main-logo {
+        width: max-content;
+        margin: 0 auto;
+    }
+    
 
+    .main-logo img {
+        padding: 20px;
+        width: 400px;
+    }
 }

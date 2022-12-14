@@ -1,7 +1,14 @@
 /* police de titre */
-@import url(fonts/GrenzeGotisch-VariableFont_wght.ttf);
+@font-face {
+    font-family: 'Grenze Gotisch';
+    src: url(fonts/GrenzeGotisch-VariableFont_wght.ttf);
+}
+
 /* police de corps */
-@import url(fonts/Arima-VariableFont_wght.ttf);
+@font-face {
+    font-family: 'Arima';
+    src: url(fonts/Arima-VariableFont_wght.ttf);
+}
 
 *, ::before, ::after {
     margin: 0;
@@ -58,10 +65,6 @@ body, html {
     height: 100%;
 }
 
-main {
-    /* min-height: 100%; */
-    margin: 0 auto 0 auto;
-}
 
 h1.titre-page, h2.sous-titre, h3.titre-lambda {
     font-family: 'Grenze Gotisch', cursive;
@@ -150,9 +153,12 @@ header .menu-principal .pages-menu {
 
 /* FIN NAVBAR */
 
+
+
 /* FOOTER */
 
 footer {
+    margin-top: auto;
     color: aliceblue;
     padding: 15px;
     background-color: #18475c;

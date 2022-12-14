@@ -39,138 +39,277 @@
     <main>
       <h1>Mes Projets</h1>
 
-      <div>
-        <h2 class="sous-titre">Projet 1 : Conception d’un site web WordPress</h2>
-        <div class="projets">
-          <div class="cahier-charges">
-            <h3 class="titre-lambda">Cahier des charges :</h3>
+      <h2 class="project-title-coll">Projet 1 : Portfolio Wordpress</h2>
+      <div class="project-list">
+        <h2 class="sous-titre">
+          Partie 1 : Conception d’un site web WordPress
+        </h2>
+        <div class="pc-tab">
+          <input id="tab1" type="radio" name="pct" />
+          <input id="tab2" type="radio" name="pct" />
+          <input id="tab3" type="radio" name="pct" />
+          <nav>
             <ul>
-               <p>Concevoir un site web qui sera composé de :</p>
-              <li>
-                Un onglet « Accueil » ⇒ présentation du BTS SIO SLAM, liens,
-                photos,
+              <li class="tab1">
+                <label for="tab1">Description</label>
               </li>
-              <li>
-                Un onglet « CV » ⇒ CV en HTML/CSS, CV téléchargeable en version
-                PDF,
+              <li class="tab2">
+                <label for="tab2">Captures d'écran</label>
               </li>
-              <li>
-                Un onglet « ÉCOLE » ⇒ présentation du CFA INSTA, lien du site,
-                photos,
-              </li>
-              <li>
-                Un onglet « Entreprise » ⇒ présentation de l’entreprise, lien du
-                site, photos,
-              </li>
-              <li>
-                Un onglet « Cours » ⇒ premier chapitre + série d’exercices +
-                corrections,
-              </li>
-              <li>
-                Un onglet « Contact » ⇒ formulaire de contact (nom, prénom,
-                e-mail, sujet)
+              <li class="tab3">
+                <label for="tab3">PPT & Github</label>
               </li>
             </ul>
-          </div>
+          </nav>
+          <section>
+            <div class="tab1 divi">
+              <div class="projets">
+                <div class="cahier-charges">
+                  <h3 class="titre-lambda">Cahier des charges :</h3>
+                  <ul>
+                    <p>Concevoir un site web qui sera composé de :</p>
+                    <li>
+                      Un onglet « Accueil » ⇒ présentation du BTS SIO SLAM,
+                      liens, photos,
+                    </li>
+                    <li>
+                      Un onglet « CV » ⇒ CV en HTML/CSS, CV téléchargeable en
+                      version PDF,
+                    </li>
+                    <li>
+                      Un onglet « ÉCOLE » ⇒ présentation du CFA INSTA, lien du
+                      site, photos,
+                    </li>
+                    <li>
+                      Un onglet « Entreprise » ⇒ présentation de l’entreprise,
+                      lien du site, photos,
+                    </li>
+                    <li>
+                      Un onglet « Cours » ⇒ premier chapitre + série d’exercices
+                      + corrections,
+                    </li>
+                    <li>
+                      Un onglet « Contact » ⇒ formulaire de contact (nom,
+                      prénom, e-mail, sujet)
+                    </li>
+                  </ul>
+                </div>
 
-          <div class="specifications">
-            <h3 class="titre-lambda">Spécifications</h3>
-            <ul>
-              <li>Utiliser « TRELLO » ⇒ gestion du projet (tâches),</li>
-              <li>Utiliser un « diagramme de Gantt » ⇒ gestion du temps,</li>
-              <li>
-                Utiliser le Adobe XD pour la maquette et CMS WordPress pour la
-                réalisation,
-              </li>
-              <li>
-                Utiliser un Server local (type Wamp), ou hébergement web (type
-                OVH),
-              </li>
-              <li>Créer un PowerPoint de présentation.</li>
-            </ul>
-          </div>
-        </div>
+                <div class="specifications">
+                  <h3 class="titre-lambda">Spécifications</h3>
+                  <ul>
+                    <li>Utiliser « TRELLO » ⇒ gestion du projet (tâches),</li>
+                    <li>
+                      Utiliser un « diagramme de Gantt » ⇒ gestion du temps,
+                    </li>
+                    <li>
+                      Utiliser le Adobe XD pour la maquette et CMS WordPress
+                      pour la réalisation,
+                    </li>
+                    <li>
+                      Utiliser un Server local (type Wamp), ou hébergement web
+                      (type OVH),
+                    </li>
+                    <li>Créer un PowerPoint de présentation.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab2 divi">
+              <div>
+                <img src="www/imageAccueilP1.png" alt="image accueil du site" />
+                <legend>Page d'accueil du portfolio wordpress</legend>
 
-        <h2 class="sous-titre">Projet 2 : Rajout de spécifications dans le cahier des charges</h2>
-        <div class="projets">
-          <div class="cours">
-            <h3 class="titre-lambda">Amélioration de l’onglet Cours:</h3>
-            <ul>
-              <li>
-                Inclusion des traductions des algorithmes en C avec les fichiers
-                exécutables téléchargeables,
-              </li>
-              <li>
-                Inclusion des programmes en PHP exécutables directement sur la
-                page.
-              </li>
-            </ul>
-          </div>
-
-          <div class="veilles-tech">
-            <h3 class="titre-lambda">Ajout de l’onglet Veille Technologique :</h3>
-            <ul>
-              <li>Choisir un thème,</li>
-              <li>Établir une veille sur le thème,</li>
-              <li>
-                Afficher les articles consultés sur le site et intégrer un Flux
-                RSS.
-              </li>
-            </ul>
-          </div>
-
-          <div class="veille-jur">
-            <h3 class="titre-lambda">Ajout de l’onglet Veille Juridique :</h3>
-            <ul>
-              <li>Choisir un thème,</li>
-              <li>Établir une veille sur le thème,</li>
-              <li>
-                Afficher les articles consultés sur le site et intégrer un Flux
-                RSS.
-              </li>
-            </ul>
-          </div>
+                <img src="www/ongletContactP1.png" alt="footer de contact" />
+                <legend>Formulaire de contact dans le footer</legend>
+              </div>
+            </div>
+            <div class="tab3 divi">
+              <h2>Third</h2>
+            </div>
+          </section>
         </div>
 
         <h2 class="sous-titre">
-          Projet 3 : virtualisation et Création d'une plateforme technologique
+          Partie 2 : Rajout de spécifications dans le cahier des charges
         </h2>
-        <div class="projets">
-          <div class="installation">
-            <h3 class="titre-lambda">Installation de la plateforme technologique :</h3>
+        <div class="pc-tab">
+          <input id="tab4" type="radio" name="pct" />
+          <input id="tab5" type="radio" name="pct" />
+          <input id="tab6" type="radio" name="pct" />
+          <nav>
             <ul>
-              <li>Virtualisation (VM ou VB)</li>
-              <li>Installation des VM :</li>
-              <ul>
-                <li>Linux Serveur Web (Apache2, PHP),</li>
-                <li>Linux Serveur SGBD (MySQL, SSH),</li>
-                <li>Windows Server (AD, DNS, DHCP),</li>
-                <li>Client W10 intégré au domaine du serveur.</li>
-              </ul>
-              <li>Installer sur le serveur Web le portfolio,</li>
-              <li>Installer sur le serveur SGBD la base de donnée de WP.</li>
+              <li class="tab4">
+                <label for="tab4">Description</label>
+              </li>
+              <li class="tab5">
+                <label for="tab5">Captures d'écran</label>
+              </li>
+              <li class="tab6">
+                <label for="tab6">PPT & Github</label>
+              </li>
             </ul>
-          </div>
+          </nav>
+          <section>
+            <div class="tab4 divi">
+              <div class="projets">
+                <div class="cours">
+                  <h3 class="titre-lambda">Amélioration de l’onglet Cours:</h3>
+                  <ul>
+                    <li>
+                      Inclusion des traductions des algorithmes en C avec les
+                      fichiers exécutables téléchargeables,
+                    </li>
+                    <li>
+                      Inclusion des programmes en PHP exécutables directement
+                      sur la page.
+                    </li>
+                  </ul>
+                </div>
 
-          <div class="realisation-virtuelle">
-            <div>
-              <h3 class="titre-lambda">Réalisation d’une veille sur la Virtualisation :</h3>
-              <ul>
-                <li>Qu’est-ce-que c’est?</li>
-                <li>Comment cela fonctionne-t-il ?</li>
-                <li>Types de virtualisations</li>
-                <li>Ses avantages … etc.</li>
-              </ul>
-            </div>
+                <div class="veilles-tech">
+                  <h3 class="titre-lambda">
+                    Ajout de l’onglet Veille Technologique :
+                  </h3>
+                  <ul>
+                    <li>Choisir un thème,</li>
+                    <li>Établir une veille sur le thème,</li>
+                    <li>
+                      Afficher les articles consultés sur le site et intégrer un
+                      Flux RSS.
+                    </li>
+                  </ul>
+                </div>
 
-            <div>
-              <h3 class="titre-lambda">Réalisation d’un tutoriel sur la Virtualisation :</h3>
-              <li>Installation de l’hyperviseur et de l’OS choisi,</li>
-              <li>Installation de Apache2 / PHP / MySQL,</li>
-              <li>Installation WordPress à partir du terminal de l’OS ,</li>
-              <li>Importer son site sur WordPress.</li>
+                <div class="veille-jur">
+                  <h3 class="titre-lambda">
+                    Ajout de l’onglet Veille Juridique :
+                  </h3>
+                  <ul>
+                    <li>Choisir un thème,</li>
+                    <li>Établir une veille sur le thème,</li>
+                    <li>
+                      Afficher les articles consultés sur le site et intégrer un
+                      Flux RSS.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="tab5 divi">
+              <h2>Second</h2>
+            </div>
+            <div class="tab6 divi">
+              <h2>Third</h2>
+            </div>
+          </section>
+        </div>
+
+        <h2 class="sous-titre">
+          Partie 3 : virtualisation et Création d'une plateforme technologique
+        </h2>
+        <div class="pc-tab">
+          <input id="tab7" type="radio" name="pct" />
+          <input id="tab8" type="radio" name="pct" />
+          <input id="tab9" type="radio" name="pct" />
+          <nav>
+            <ul>
+              <li class="tab7">
+                <label for="tab7">Description</label>
+              </li>
+              <li class="tab8">
+                <label for="tab8">Captures d'écran</label>
+              </li>
+              <li class="tab9">
+                <label for="tab9">PPT & Github</label>
+              </li>
+            </ul>
+          </nav>
+          <section>
+            <div class="tab7 divi">
+              <div class="projets">
+                <div class="installation">
+                  <h3 class="titre-lambda">
+                    Installation de la plateforme technologique :
+                  </h3>
+                  <ul>
+                    <li>Virtualisation (VM ou VB)</li>
+                    <li>Installation des VM :</li>
+                    <ul>
+                      <li>Linux Serveur Web (Apache2, PHP),</li>
+                      <li>Linux Serveur SGBD (MySQL, SSH),</li>
+                      <li>Windows Server (AD, DNS, DHCP),</li>
+                      <li>Client W10 intégré au domaine du serveur.</li>
+                    </ul>
+                    <li>Installer sur le serveur Web le portfolio,</li>
+                    <li>
+                      Installer sur le serveur SGBD la base de donnée de WP.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="realisation-virtuelle">
+                  <div>
+                    <h3 class="titre-lambda">
+                      Réalisation d’une veille sur la Virtualisation :
+                    </h3>
+                    <ul>
+                      <li>Qu’est-ce-que c’est?</li>
+                      <li>Comment cela fonctionne-t-il ?</li>
+                      <li>Types de virtualisations</li>
+                      <li>Ses avantages … etc.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h3 class="titre-lambda">
+                      Réalisation d’un tutoriel sur la Virtualisation :
+                    </h3>
+                    <li>Installation de l’hyperviseur et de l’OS choisi,</li>
+                    <li>Installation de Apache2 / PHP / MySQL,</li>
+                    <li>
+                      Installation WordPress à partir du terminal de l’OS ,
+                    </li>
+                    <li>Importer son site sur WordPress.</li>
+                  </div>
+                </div>
+              </div>
+
+              <div class="veilles-tech">
+                <h3 class="titre-lambda">
+                  Ajout de l’onglet Veille Technologique :
+                </h3>
+                <ul>
+                  <li>Choisir un thème,</li>
+                  <li>Établir une veille sur le thème,</li>
+                  <li>
+                    Afficher les articles consultés sur le site et intégrer un
+                    Flux RSS.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="veille-jur">
+                <h3 class="titre-lambda">
+                  Ajout de l’onglet Veille Juridique :
+                </h3>
+                <ul>
+                  <li>Choisir un thème,</li>
+                  <li>Établir une veille sur le thème,</li>
+                  <li>
+                    Afficher les articles consultés sur le site et intégrer un
+                    Flux RSS.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab8 divi">
+              <h2>Second</h2>
+            </div>
+            <div class="tab9 divi">
+              <h2>Third</h2>
+            </div>
+          </section>
         </div>
       </div>
     </main>

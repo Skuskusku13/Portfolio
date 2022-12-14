@@ -1,4 +1,3 @@
-
 /* font-family: 'Grenze Gotisch', cursive;  TITRE*/
 /* font-family: 'Arima', cursive;  CORPS*/
 
@@ -7,6 +6,7 @@ h2.sous-titre {
 }
 
 .projets {
+    display: flex;
     margin: 50px auto;
     box-shadow: 2px 2px 10px 12px rgba(150, 150, 150, 0.131);
 }
@@ -34,4 +34,148 @@ body.dark .projets {
     margin: 10px 0;
     font-family: 'Arima', cursive;
     font-size: 1em;
+}
+
+.pc-tab>input,
+.pc-tab section>div {
+    display: none;
+}
+
+.pc-tab img {
+    width: 100%;
+}
+
+#tab-1:checked~section .tab-1,
+#tab-2:checked~section .tab-2,
+#tab-3:checked~section .tab-3,
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3,
+#tab4:checked~section .tab4,
+#tab5:checked~section .tab5,
+#tab6:checked~section .tab6,
+#tab7:checked~section .tab7,
+#tab8:checked~section .tab8,
+#tab9:checked~section .tab {
+    display: block;
+}
+
+.pc-tab {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #18475c;
+}
+
+.pc-tab ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc-tab ul li label {
+    font-family: 'Grenze Gotisch', cursive;
+    float: left;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    background: #18475c;
+    color: aliceblue;
+}
+
+.pc-tab ul li label:hover {
+    background: rgb(206, 224, 240);
+}
+
+.pc-tab ul li label:active {
+    background: #ffffff;
+}
+
+.pc-tab ul li:not(:last-child) label {
+    border-right-width: 0;
+}
+
+.pc-tab section {
+    font-family: "Arima", cursive;
+    clear: both;
+}
+
+.pc-tab section .divi {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+    color: #444;
+}
+
+.pc-tab section .divi h2 {
+    margin: 0;
+    font-family: 'Grenze Gotisch', cursive;
+    letter-spacing: 1px;
+    color: #34495e;
+}
+
+#tab--1:checked~nav .tab-1 label,
+#tab--2:checked~nav .tab-2 label,
+#tab--3:checked~nav .tab-3 label,
+#tab1:checked~nav .tab1 label,
+#tab2:checked~nav .tab2 label,
+#tab3:checked~nav .tab3 label,
+#tab4:checked~nav .tab4 label,
+#tab5:checked~nav .tab5 label,
+#tab6:checked~nav .tab6 label,
+#tab7:checked~nav .tab7 label,
+#tab8:checked~nav .tab8 label,
+#tab9:checked~nav .tab9 label {
+    background: white;
+    color: #111;
+    position: relative;
+}
+
+#tab-1:checked~nav .tab-1 label:after,
+#tab-2:checked~nav .tab-2 label:after,
+#tab-3:checked~nav .tab-3 label:after,
+#tab1:checked~nav .tab1 label:after,
+#tab2:checked~nav .tab2 label:after,
+#tab3:checked~nav .tab3 label:after,
+#tab4:checked~nav .tab4 label:after,
+#tab5:checked~nav .tab5 label:after,
+#tab6:checked~nav .tab6 label:after,
+#tab7:checked~nav .tab7 label:after,
+#tab8:checked~nav .tab8 label:after,
+#tab9:checked~nav .tab9 label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    left: 0;
+    bottom: -1px;
+}
+
+legend:first-of-type {
+    margin-bottom: 30px;
+}
+
+legend {
+    padding: 2px 5px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px;
+}
+
+.project-title-coll {
+    cursor: pointer;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.project-list {
+    display: none;
+}
+
+.project-list.active {
+    display: block;
 }

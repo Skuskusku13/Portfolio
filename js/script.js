@@ -18,7 +18,6 @@ closeBurger.addEventListener("click", () => {
 
 // changement de couleur en dark
 
-
 let body = document.querySelector("body");
 let colors = document.querySelector(".colors");
 let menuPrincipal = document.querySelector(".menu-principal");
@@ -33,32 +32,32 @@ colors.addEventListener("click", () => {
   body.classList.toggle("dark");
   if (colors.textContent == "DARK") {
     colors.innerHTML = "LIGHT";
-    colors.classList.remove("lightmode")
-    colors.classList.add("darkmode")
+    colors.classList.remove("lightmode");
+    colors.classList.add("darkmode");
     // gitblack.style.display="visible";
     // gitwhite.style.display="none";
-    localStorage.removeItem("light")
-    localStorage.setItem("dark", true)
+    localStorage.removeItem("light");
+    localStorage.setItem("dark", true);
   } else {
     colors.innerHTML = "DARK";
-    colors.classList.remove("darkmode")
-    colors.classList.add("lightmode")
-    localStorage.removeItem("dark")
+    colors.classList.remove("darkmode");
+    colors.classList.add("lightmode");
+    localStorage.removeItem("dark");
   }
 });
 
-// lis si le bouton à déjà stocké un localstorage  
+// lis si le bouton à déjà stocké un localstorage
 
-if(localStorage.getItem("dark")) {
-  body.style.transition="none";
-  menuPrincipal.style.transition="none";
+if (localStorage.getItem("dark")) {
+  body.style.transition = "none";
+  menuPrincipal.style.transition = "none";
   colors.innerHTML = "LIGHT";
   body.classList.add("dark");
-  colors.classList.remove("lightmode")
-  colors.classList.add("darkmode")
+  colors.classList.remove("lightmode");
+  colors.classList.add("darkmode");
   // gitwhite.style.display="visible"
   // gitblack.style.display="none"
-} 
+}
 
 // fin des changements de couleurs
 
@@ -118,3 +117,13 @@ function traiterTel() {
     Error.innerHTML = "Veuillez mettre un message";
   }
 }
+
+// page de projets
+
+let projectList = document.querySelector(".project-list");
+let projectTitle = document.querySelector(".project-title-coll");
+
+projectTitle.addEventListener("click", () => {
+  projectList.classList.toggle("active");
+})
+// // let ppt = document.querySelector('#ppt');
