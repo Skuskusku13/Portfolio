@@ -13,7 +13,7 @@
     }
 
     h3.titre-lambda {
-        font-size: 90%;
+        font-size: 16px;
     }
     
     /* NAVBAR */
@@ -33,7 +33,7 @@
         background-color: #18475c;
         transition: 0.3s ease-in;
         width: 100%;
-        min-height: 100vh;
+        min-height: calc(100VH - 70px);
         transform: translate(-100%);
     }
 
@@ -65,7 +65,7 @@
     }
 
     header .menu-principal .pages-menu {
-        font-size: 90%;
+        font-size: 16px;
     }
 
     /* FIN NAVBAR */
@@ -118,7 +118,7 @@
         background-color: #18475c;
         transition: 0.3s ease-in;
         width: 100%;
-        min-height: 100vh;
+        min-height: calc(100vh - 70px);
         transform: translate(-100%);
     }
 
@@ -202,7 +202,7 @@
         background-color: #18475c;
         transition: 0.3s ease-in;
         width: 100%;
-        min-height: 100vh;
+        min-height: calc(100VH - 80px);
         transform: translate(-100%);
     }
 

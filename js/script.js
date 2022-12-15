@@ -120,10 +120,14 @@ function traiterTel() {
 
 // page de projets
 
-let projectList = document.querySelector(".project-list");
-let projectTitle = document.querySelector(".project-title-coll");
+if(window.location.pathname == "/projets.html") {
 
-projectTitle.addEventListener("click", () => {
-  projectList.classList.toggle("active");
-})
+  let projectTitle = document.querySelectorAll(".project-title-coll");
+
+  projectTitle.forEach(elt => {
+    elt.addEventListener('click', () => {
+      elt.classList.toggle("cont");
+      })
+    })
+}
 // // let ppt = document.querySelector('#ppt');

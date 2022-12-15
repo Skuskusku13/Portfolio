@@ -6,8 +6,8 @@ h2.sous-titre {
 }
 
 .projets {
-    display: flex;
-    margin: 50px auto;
+    /* display: flex; */
+    margin: 25px auto;
     box-shadow: 2px 2px 10px 12px rgba(150, 150, 150, 0.131);
 }
 
@@ -33,7 +33,6 @@ body.dark .projets {
 .projets ul li, p {
     margin: 10px 0;
     font-family: 'Arima', cursive;
-    font-size: 1em;
 }
 
 .pc-tab>input,
@@ -45,9 +44,6 @@ body.dark .projets {
     width: 100%;
 }
 
-#tab-1:checked~section .tab-1,
-#tab-2:checked~section .tab-2,
-#tab-3:checked~section .tab-3,
 #tab1:checked~section .tab1,
 #tab2:checked~section .tab2,
 #tab3:checked~section .tab3,
@@ -56,7 +52,13 @@ body.dark .projets {
 #tab6:checked~section .tab6,
 #tab7:checked~section .tab7,
 #tab8:checked~section .tab8,
-#tab9:checked~section .tab {
+#tab9:checked~section .tab9,
+#tab10:checked~section .tab10,
+#tab11:checked~section .tab11,
+#tab12:checked~section .tab12,
+#tab13:checked~section .tab13,
+#tab14:checked~section .tab14,
+#tab15:checked~section .tab15 {
     display: block;
 }
 
@@ -75,11 +77,19 @@ body.dark .projets {
 .pc-tab ul li label {
     font-family: 'Grenze Gotisch', cursive;
     float: left;
-    padding: 15px 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 1px solid #ddd;
     border-bottom: 0;
     background: #18475c;
     color: aliceblue;
+}
+
+.pc-tab ul li label::after {
+    content: "⇳";
+    font-size: larger;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .pc-tab ul li label:hover {
@@ -103,9 +113,7 @@ body.dark .projets {
     padding: 20px;
     width: 100%;
     border: 1px solid #ddd;
-    background: #fff;
-    line-height: 1.5em;
-    letter-spacing: 0.3px;
+    background: rgb(225, 232, 237);
     color: #444;
 }
 
@@ -116,9 +124,6 @@ body.dark .projets {
     color: #34495e;
 }
 
-#tab--1:checked~nav .tab-1 label,
-#tab--2:checked~nav .tab-2 label,
-#tab--3:checked~nav .tab-3 label,
 #tab1:checked~nav .tab1 label,
 #tab2:checked~nav .tab2 label,
 #tab3:checked~nav .tab3 label,
@@ -127,32 +132,16 @@ body.dark .projets {
 #tab6:checked~nav .tab6 label,
 #tab7:checked~nav .tab7 label,
 #tab8:checked~nav .tab8 label,
-#tab9:checked~nav .tab9 label {
-    background: white;
+#tab9:checked~nav .tab9 label,
+#tab10:checked~nav .tab10 label,
+#tab11:checked~nav .tab11 label,
+#tab12:checked~nav .tab12 label,
+#tab13:checked~nav .tab13 label,
+#tab14:checked~nav .tab14 label,
+#tab15:checked~nav .tab15 label {
+    background: aliceblue;
     color: #111;
     position: relative;
-}
-
-#tab-1:checked~nav .tab-1 label:after,
-#tab-2:checked~nav .tab-2 label:after,
-#tab-3:checked~nav .tab-3 label:after,
-#tab1:checked~nav .tab1 label:after,
-#tab2:checked~nav .tab2 label:after,
-#tab3:checked~nav .tab3 label:after,
-#tab4:checked~nav .tab4 label:after,
-#tab5:checked~nav .tab5 label:after,
-#tab6:checked~nav .tab6 label:after,
-#tab7:checked~nav .tab7 label:after,
-#tab8:checked~nav .tab8 label:after,
-#tab9:checked~nav .tab9 label:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #ffffff;
-    left: 0;
-    bottom: -1px;
 }
 
 legend:first-of-type {
@@ -168,14 +157,26 @@ legend {
 }
 
 .project-title-coll {
+    margin-top: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
     font-family: 'Grenze Gotisch', cursive;
 }
+
+.project-title-coll::after {
+    content: "⬇︎";
+    margin: 0 15px;
+    font-size: large;
+}
+
+.project-title-coll.cont::after {
+    content: "⬆︎";
+} 
 
 .project-list {
     display: none;
 }
 
-.project-list.active {
+.project-title-coll.cont + .project-list {
     display: block;
 }
