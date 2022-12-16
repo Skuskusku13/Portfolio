@@ -1,7 +1,16 @@
 @media screen and (max-width: 375px) {
 
+    h1.titre-page {
+        font-size: 1.7em;
+    }
+
+    h2.sous-titre {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
     h2.project-title-coll {
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
 
     .projets ul li, p {
@@ -21,7 +30,35 @@
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 425px) {}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    h1.titre-page {
+        font-size: 1.7em;
+    }
+
+    h2.sous-titre {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    h2.project-title-coll {
+        font-size: 1.2em;
+    }
+
+    .projets ul li, p {
+        margin: 10px 0;
+        font-family: 'Arima', sans-serif;
+        font-size: 13px;
+    }
+    
+    .pc-tab ul li label {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    legend {
+        font-size: 13px;
+    }
+}
 
 
 @media screen and (min-width: 425px) and (max-width: 768px) {}
