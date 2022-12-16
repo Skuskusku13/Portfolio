@@ -1,13 +1,13 @@
 /* police de titre */
 @font-face {
     font-family: 'Grenze Gotisch';
-    src: url(fonts/GrenzeGotisch-VariableFont_wght.ttf);
+    src: url("fonts/GrenzeGotisch-VariableFont_wght.ttf") format("truetype");
 }
 
 /* police de corps */
 @font-face {
     font-family: 'Arima';
-    src: url(fonts/Arima-VariableFont_wght.ttf);
+    src: url("fonts/Arima-VariableFont_wght.ttf") format("truetype");
 }
 
 *, ::before, ::after {
@@ -35,6 +35,11 @@ body {
     font-size: 1em;
     position: absolute;
     top: 2%;
+    cursor: pointer;
+}
+
+main {
+    margin: 50px 0;
 }
 
 body.dark {
@@ -67,10 +72,10 @@ body, html {
 
 
 h1.titre-page, h2.sous-titre, h3.titre-lambda {
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Grenze Gotisch', sans-serif;
 }
 
-.titre-page {
+/* .titre-page {
     font-size: 2.7em;
 }
 
@@ -80,10 +85,10 @@ h1.titre-page, h2.sous-titre, h3.titre-lambda {
 
 .titre-lambda {
     font-size: 1.5;
-}
+} */
 
 p {
-    font-family: 'Arima', cursive;
+    font-family: 'Arima', sans-serif;
     font-size: 1em;
 }
 
@@ -112,7 +117,7 @@ header .menu-principal .menu li {
 header .menu-principal .menu li a {
     text-decoration: none;
     color: aliceblue;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Grenze Gotisch', sans-serif;
 }
 
 header .menu-principal i {
@@ -170,7 +175,7 @@ footer div {
 }
 /* 
 footer div p {
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Grenze Gotisch', sans-serif;
 } */
 
 

@@ -1,8 +1,12 @@
 @media screen and (max-width: 375px) {
 
+    h2.project-title-coll {
+        font-size: 0.8em;
+    }
+
     .projets ul li, p {
         margin: 10px 0;
-        font-family: 'Arima', cursive;
+        font-family: 'Arima', sans-serif;
         font-size: 13px;
     }
     
@@ -22,6 +26,7 @@
 
 @media screen and (min-width: 425px) and (max-width: 768px) {}
 
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .projets {
         display: flex;
@@ -29,7 +34,7 @@
 
     .projets ul li, p {
         margin: 10px 0;
-        font-family: 'Arima', cursive;
+        font-family: 'Arima', sans-serif;
         font-size: 15px;
     }
     
@@ -52,7 +57,7 @@
 
     .projets ul li, p {
         margin: 10px 0;
-        font-family: 'Arima', cursive;
+        font-family: 'Arima', sans-serif;
         font-size: 15px;
     }
     
@@ -75,7 +80,7 @@
 
     .projets ul li, p {
         margin: 10px 0;
-        font-family: 'Arima', cursive;
+        font-family: 'Arima', sans-serif;
         font-size: 15px;
     }
     
