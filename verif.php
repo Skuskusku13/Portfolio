@@ -43,7 +43,8 @@
       $mess = trim((nl2br($_POST['mess'])));
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo '<a href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '>Confirmez l\'envoie du mail en cliquant ici</a>';
+        echo '<a href="mailto:danlevy149@gmail.com?subject='. $sujet .' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '">
+        Confirmez l\'envoie du mail en cliquant ici</a>';
       } else {
         header("Location: Levy-Dan-SLAM/contact.html");
       }
