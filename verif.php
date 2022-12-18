@@ -45,16 +45,16 @@ if (isset($_POST['Valider'])) {
     </nav>
   </header>
 
-  <main>
+  <main style="margin-top: 100px;">
     <?php
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      echo '<a href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '>ici</a>';
+      echo '<a href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '>Confirmez l\'envoie du mail en cliquant ici</a>';
     } else {
-      header("Location: contact.html");
+      header("Location: Levy-Dan-SLAM/contact.html");
     }
     ?>
+  <a href="Levy-Dan-SLAM/index.html">Retourner à la page d'accueil</a>
   </main>
-  <a href="index.html">Retourner à la page d'accueil</a>
 </body>
 
 </html>
