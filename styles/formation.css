@@ -10,7 +10,6 @@
 }
 
 .presentation-ecole div p {
-    text-align: justify;
     margin: auto;
 }
 
@@ -18,13 +17,13 @@
     object-fit: contain;
 }
 
-.presentation-ecole div .info  {
+/* .presentation-ecole div .info  {
     padding-left: 50px;
 }
 
 .presentation-ecole div .compta  {
     padding-right: 50px;
-}
+} */
 
 
 /* carte + adresse + mail */
@@ -73,14 +72,7 @@
 
 .integrer-cfa div {
     display: flex;
-    flex-wrap: wrap;
     margin: 50px 0;
-}
-
-.integrer-cfa-reverse {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
 }
 
 .integrer-cfa img {
@@ -88,13 +80,15 @@
 }
 
 .integrer-cfa div ul{
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
     font-family: 'Arima', cursive;
     list-style-type: none;
-    margin: auto 30px;
 }
 
 .integrer-cfa div ul li{
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .integrer-cfa div ul li::before{
