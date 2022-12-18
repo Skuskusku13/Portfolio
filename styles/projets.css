@@ -182,7 +182,8 @@ legend {
 .pc-tab .tab6.divi a,
 .pc-tab .tab9.divi a,
 .pc-tab .tab12.divi a,
-.pc-tab .tab15.divi a {
+.pc-tab .tab15.divi a,
+.pc-tab .tab18.divi a {
     margin: 10px 20px;
     text-decoration: none;
     background-color: #34495e;
