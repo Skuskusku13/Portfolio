@@ -1,16 +1,3 @@
-<?php
-
-if (isset($_POST['Valider'])) {
-  $nom = trim(($_POST['nom']));
-  $email = trim(htmlspecialchars($_POST['email']));
-  $tel = trim(htmlspecialchars($_POST['tel']));
-  $sujet = trim(($_POST['sujet']));
-  $mess = trim((nl2br($_POST['mess'])));
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,13 +34,23 @@ if (isset($_POST['Valider'])) {
 
   <main style="margin-top: 100px;">
     <?php
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      echo '<a href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '>Confirmez l\'envoie du mail en cliquant ici</a>';
-    } else {
-      header("Location: Levy-Dan-SLAM/contact.html");
+
+    if (isset($_POST['Valider'])) {
+      $nom = trim(($_POST['nom']));
+      $email = trim(htmlspecialchars($_POST['email']));
+      $tel = trim(htmlspecialchars($_POST['tel']));
+      $sujet = trim(($_POST['sujet']));
+      $mess = trim((nl2br($_POST['mess'])));
+
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo '<a href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '>Confirmez l\'envoie du mail en cliquant ici</a>';
+      } else {
+        header("Location: Levy-Dan-SLAM/contact.html");
+      }
     }
+
     ?>
-  <a href="Levy-Dan-SLAM/index.html">Retourner à la page d'accueil</a>
+    <a href="Levy-Dan-SLAM/index.html">Retourner à la page d'accueil</a>
   </main>
 </body>
 
