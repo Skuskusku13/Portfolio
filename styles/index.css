@@ -65,12 +65,12 @@ body.dark .main-cards .card-child {
     color: aliceblue;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Grenze Gotisch', sans-serif;
     font-size: 1.2em;
 }
 
 .main-cards .card-child div p {
-    font-family: 'Arima', cursive;
+    font-family: 'Arima', sans-serif;
     font-size: 1em;
     margin: auto 0;
 }

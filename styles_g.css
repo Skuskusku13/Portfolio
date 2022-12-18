@@ -169,6 +169,10 @@ footer {
     background-color: #18475c;
 }
 
+body.dark footer {
+    background-color: #18475c87;
+} 
+
 footer div {
     display: flex;
     /* justify-content: space-between; */

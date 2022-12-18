@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles_g.css" />
     <link rel="stylesheet" href="responsive/styles_g_resp.css" />
     <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="responsive/contact_resp.css" />
     <title>Contact</title>
   </head>
   <body>
@@ -36,9 +37,7 @@
     </div>
 
     <main>
-      <h1>Page Contact</h1>
-
-      <h2>Vous pouvez me contacter directement en remplissant ce formulaire</h2>
+      <h1 class="titre-page">Vous pouvez me contacter directement en remplissant ce formulaire</h1>
 
       <form action="verif.php" method="post">
         <p id="Error"></p>
@@ -46,7 +45,7 @@
           <tr>
             <td>Nom / Prénom ou Entreprise</td>
             <td>
-              <input id="nom" type="text" name="nom" onblur="traiterNom()" />
+              <input id="nom" type="text" name="nom" />
             </td>
           </tr>
           <tr>
@@ -63,19 +62,19 @@
           <tr>
             <td>Téléphone</td>
             <td>
-              <input id="tel" type="text" name="tel" onblur="traiterTel()" />
+              <input id="tel" type="text" name="tel"/>
             </td>
           </tr>
           <tr>
             <td>Sujet</td>
             <td>
-              <input type="text" id="sujet" name="sujet" />
+              <input type="text" id="sujet" name="sujet" onblur="traiterSujet()" />
             </td>
           </tr>
           <tr>
             <td>Votre Message</td>
             <td>
-              <textarea id="mess" name="mess" onblur="traiterMess()"></textarea>
+              <textarea id="mess" name="mess"></textarea>
             </td>
           </tr>
           <tr>

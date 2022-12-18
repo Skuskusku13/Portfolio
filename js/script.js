@@ -85,49 +85,26 @@ function traiterEmail() {
   }
 }
 
-function traiterNom() {
-  let nom = document.getElementById("nom").value;
+function traiterSujet() {
+  let sujet = document.getElementById("sujet").value;
 
-  if (nom != "") {
-    document.getElementById("nom").classList.add("validName");
+  if (sujet != "") {
+    document.getElementById("sujet").style.backgroundColor = "#71bf71";
   } else {
-    document.getElementById("nom").style.backgroundColor = "#e24d36";
-    Error.innerHTML = "Veuillez mettre un nom";
-  }
-}
-
-function traiterMess() {
-  let mess = document.getElementById("mess").value;
-
-  if (mess != "") {
-    document.getElementById("mess").style.backgroundColor = "#71bf71";
-  } else {
-    document.getElementById("mess").style.backgroundColor = "#e24d36";
-    Error.innerHTML = "Veuillez mettre un message";
-  }
-}
-
-function traiterTel() {
-  let tel = document.getElementById("tel").value;
-
-  if (tel != "") {
-    document.getElementById("mess").style.backgroundColor = "#71bf71";
-  } else {
-    document.getElementById("mess").style.backgroundColor = "#e24d36";
-    Error.innerHTML = "Veuillez mettre un message";
+    document.getElementById("sujet").style.backgroundColor = "#e24d36";
+    Error.innerHTML = "Le sujet ne peut pas être vide";
   }
 }
 
 // page de projets
 
-if(window.location.pathname == "/projets.html") {
-
+if (window.location.pathname == "/projets.html") {
   let projectTitle = document.querySelectorAll(".project-title-coll");
 
-  projectTitle.forEach(elt => {
-    elt.addEventListener('click', () => {
+  projectTitle.forEach((elt) => {
+    elt.addEventListener("click", () => {
       elt.classList.toggle("cont");
-      })
-    })
+    });
+  });
 }
 // // let ppt = document.querySelector('#ppt');

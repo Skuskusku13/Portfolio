@@ -1,8 +1,9 @@
-h2 {
+h1 {
     text-align: center;
+    font-family: 'Grenze Gotisch', sans-serif;
 }
 
-p {
+p#Error {
     font-weight: 600;
     font-size: 1.2em;
     text-align: center;
@@ -18,6 +19,9 @@ textarea {
     border-radius: 10px;
     border: 1px solid #18475c;
     height: 100px;
+    width: 100%;
+    resize: vertical;
+    padding: 5px;
 }
 
 td {
@@ -39,36 +43,8 @@ input#mess {
 input {
     width: 100%;
     text-align: center;
+    font-family: 'Arima', sans-serif;
     height: 40px;
     border-radius: 10px;
     border: 1px solid #18475c;
-}
-
-
-@media all and (min-width: 500px) {
-    textarea {
-        width: 100%;
-        resize: vertical;
-        padding: 5px;
-    }
-}
-
-@media all and (max-width: 500px) {
-
-    form {
-        max-width: 320px;
-    }
-
-    td {
-        text-align: center;
-        font-family: 'Arima', cursive;
-        display: flex;
-        flex-direction: column;
-    }
-
-    textarea {
-        padding: 5px;
-        resize: vertical;
-        width: 100%;
-    }
 }
