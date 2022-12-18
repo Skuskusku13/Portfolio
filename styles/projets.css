@@ -6,13 +6,15 @@ h2.sous-titre {
 }
 
 .projets {
-    /* display: flex; */
+    background-color: aliceblue;
     margin: 25px auto;
     box-shadow: 2px 2px 10px 12px rgba(150, 150, 150, 0.131);
     padding: 10px;
 }
 
 body.dark .projets {
+    background-color: #00000029;
+    color: aliceblue;
     box-shadow: 2px 2px 10px 12px rgba(139, 126, 126, 0.131);
 }
 
@@ -43,25 +45,32 @@ body.dark .projets {
 
 .pc-tab img {
     width: 100%;
-    max-height: 300px;
 }
 
 #tab1:checked~section .tab1,
 #tab2:checked~section .tab2,
-#tab3:checked~section .tab3,
 #tab4:checked~section .tab4,
 #tab5:checked~section .tab5,
-#tab6:checked~section .tab6,
 #tab7:checked~section .tab7,
 #tab8:checked~section .tab8,
-#tab9:checked~section .tab9,
 #tab10:checked~section .tab10,
 #tab11:checked~section .tab11,
-#tab12:checked~section .tab12,
 #tab13:checked~section .tab13,
 #tab14:checked~section .tab14,
-#tab15:checked~section .tab15 {
+#tab16:checked~section .tab16,
+#tab17:checked~section .tab17 {
     display: block;
+}
+
+#tab3:checked~section .tab3,
+#tab6:checked~section .tab6,
+#tab9:checked~section .tab9,
+#tab12:checked~section .tab12,
+#tab15:checked~section .tab15, 
+#tab18:checked~section .tab18 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .pc-tab {
@@ -117,7 +126,12 @@ body.dark .projets {
     padding: 20px;
     width: 100%;
     border: 1px solid #ddd;
-    background: #f4f5f6;
+    background-color: #f0f7fd;
+}
+
+body.dark .pc-tab section .divi {
+    background-color: #272727cf;
+    color: aliceblue;;
 }
 
 .pc-tab section .divi h2 {
@@ -141,7 +155,10 @@ body.dark .projets {
 #tab12:checked~nav .tab12 label,
 #tab13:checked~nav .tab13 label,
 #tab14:checked~nav .tab14 label,
-#tab15:checked~nav .tab15 label {
+#tab15:checked~nav .tab15 label,
+#tab16:checked~nav .tab16 label,
+#tab17:checked~nav .tab17 label,
+#tab18:checked~nav .tab18 label {
     background: aliceblue;
     color: #18475c;
     position: relative;
@@ -157,6 +174,21 @@ legend {
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+
+.pc-tab .tab3.divi a,
+.pc-tab .tab6.divi a,
+.pc-tab .tab9.divi a,
+.pc-tab .tab12.divi a,
+.pc-tab .tab15.divi a {
+    margin: 10px 20px;
+    text-decoration: none;
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
 }
 
 .project-title-coll {
