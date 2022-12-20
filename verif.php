@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles_g.css" />
   <link rel="stylesheet" type="text/css" href="responsive/styles_g_resp.css" />
+  <link rel="stylesheet" type="text/css" href="styles/contact.css" />
   <title>Envoie du message</title>
 </head>
 
@@ -15,7 +16,7 @@
     <nav class="menu-principal">
       <div class="logo-navbar">
         <a href="index.html">
-          <img class="navbar-image" src="www/cv.png" alt="logo du site" />
+          <img class="navbar-image" src="www/logo-portfolio.png" alt="logo du site" />
         </a>
       </div>
       <i class="open"></i>
@@ -37,29 +38,34 @@
   </div>
 
   <main style="margin-top: 100px;">
-    <?php
+    <div class="contact-verif-button">
+      <p>
+        <?php
 
-    if (isset($_POST['Valider'])) {
-      $nom = trim(($_POST['nom']));
-      $email = trim(htmlspecialchars($_POST['email']));
-      $tel = trim(htmlspecialchars($_POST['tel']));
-      $sujet = trim($_POST['sujet']);
-      $mess = trim(nl2br($_POST['mess']));
+        if (isset($_POST['Valider'])) {
+          $nom = trim(($_POST['nom']));
+          $email = trim(htmlspecialchars($_POST['email']));
+          $tel = trim(htmlspecialchars($_POST['tel']));
+          $sujet = trim($_POST['sujet']);
+          $mess = trim(nl2br($_POST['mess']));
 
-      if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo '<a id="valid-email"
+          if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo '<a target="_blank" id="valid-email"
                  href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '">
-          Confirmez l\'envoie du mail en cliquant ici
+          Confirmez l\'envoie du mail
         </a>';
-      } else {
-        header("Location: contact.html");
-      }
-    }
+          } else {
+            header("Location: contact.html");
+          }
+        }
 
-    ?>
-    <p>
-      <a href="index.html">Retourner à la page d'accueil</a>
-    </p>
+        ?>
+      </p>
+
+      <p>
+        <a class="return-index" href="index.html">Retourner à la page d'accueil</a>
+      </p>
+    </div>
   </main>
 
   <footer>
