@@ -63,6 +63,7 @@ body.dark .menu-principal {
     transition: 0.5s ease-in-out;
     background-color: #18475c87;
     color: aliceblue;
+    width: 100%;
     /*  pour le js */
 }
 
