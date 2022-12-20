@@ -1,27 +1,75 @@
 @media screen and (max-width: 375px) {
 
+    .document {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .competences, .cv {
+        margin: 30px auto 0 auto;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
 }
 
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
 
+    .document {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .competences, .cv {
+        margin: 30px auto 0 auto;
+    }
+
+    p, a {
+        font-size: 14px;
+    }
 }
 
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
 
+    .document {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .competences, .cv {
+        margin: 30px auto 0 auto;
+    }
+
+    p, a {
+        font-size: 15px;
+    }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    .competences, .cv {
+        margin: 30px 50px 0 50px;
+    }
+
+    p, a {
+        font-size: 15px;
+    }
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-
+    p, a {
+        font-size: 16px;
+    }
 }
 
 
 @media screen and (min-width: 1440px) {
-
+    p, a {
+        font-size: 16px;
+    }
 }
