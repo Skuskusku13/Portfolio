@@ -4,7 +4,7 @@
         text-align: center;
     }
 
-    p, li, a {
+    main p, main li, main a {
         font-size: 13px;
     }
 
@@ -49,7 +49,7 @@
         text-align: center;
     }
 
-    p, li, a {
+    main p, main li, main a {
         font-size: 13px;
     }
 
@@ -96,7 +96,7 @@
         text-align: center;
     }
 
-    p, li, a {
+    main p, main li, main a {
         font-size: 14px;
     }
 
@@ -142,7 +142,7 @@
         max-width: 1000px;
         margin: 0 auto;
     }
-    p, li, a {
+    main p, main li, main a {
         font-size: 15px;
     }
 
@@ -186,7 +186,7 @@
         margin: 0 auto;
     }
     
-    p, li, a {
+    main p, main li, main a {
         font-size: 15px;
     }
 
@@ -230,7 +230,7 @@
         margin: 0 auto;
     }
 
-    p, li, a {
+    main p, main li, main a {
         font-size: 16px;
     }
 
