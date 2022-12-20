@@ -101,10 +101,20 @@ function traiterSujet() {
 if (window.location.pathname == "/projets.html") {
   let projectTitle = document.querySelectorAll(".project-title-coll");
 
-  projectTitle.forEach((elt) => {
+  projectTitle.forEach(elt => {
     elt.addEventListener("click", () => {
       elt.classList.toggle("cont");
     });
   });
 }
-// // let ppt = document.querySelector('#ppt');
+// page de veilles
+
+if (window.location.pathname == "/veilles.html") {
+  let veilleTitle = document.querySelectorAll(".titre-page");
+
+  veilleTitle.forEach(elt => {
+    elt.addEventListener("click", () => {
+      elt.classList.toggle("active");
+    });
+  });
+}

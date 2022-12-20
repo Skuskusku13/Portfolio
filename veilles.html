@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles_g.css" />
     <link rel="stylesheet" href="responsive/styles_g_resp.css" />
     <link rel="stylesheet" href="styles/veilles.css" />
+    <link rel="stylesheet" href="responsive/veilles_resp.css" />
     <title>Veilles</title>
   </head>
   <body>
@@ -36,7 +37,304 @@
     </div>
 
     <main>
-      <h1>Page Veilles</h1>
+      <!-- Veille technologique -->
+      <!-- ne pas oublier d'enlever le active -->
+      <h1 class="titre-page">Veille Technologique</h1>
+      <div class="titre-actif">
+        <h2 class="sous-titre">La Virtualisation</h2>
+        <div>
+          <h3>Qu'est-ce que la Virtualisation</h3>
+          <p>
+            La virtualisation est une technologie informatique qui simule les fonctionnalités matérielles pour créer des services informatiques basés sur logiciel comme des applications, des serveurs, des espaces de stockage et des réseaux. En créant une version virtuelle d’une ressource ou d’un appareil  à partir d’un système informatique, la virtualisation permet aux entreprises de réduire les coûts matériels et d’augmenter l’efficacité.
+          </p>
+        </div>
+
+        <h3>Quelques exemples d'utilisation</h3>
+        <div class="exemples">
+          
+          <div>
+            <ul>
+              <li>tester un OS sans l’installer sur votre machine physique</li>
+              <li>s’assurer de la compatibilité d’une application avec différents OS </li>
+              <li>utiliser une application dans un environnement particulier</li>
+              <li>utiliser les fonctionnalités spécifiques d’un OS</li>
+              <li>simuler une 2e machine et faire des tests de communication simples</li>
+              <li>créer un petit réseau de plusieurs machines </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li>simuler des environnements multi-OS</li>
+              <li>mutualiser des serveurs physiques et faire des économies</li>
+              <li>partager un serveur physique en plusieurs serveurs virtuels</li>
+              <li>migrer des serveurs virtuels sur de nouveaux serveurs physiques</li>
+              <li>faciliter les opérations de maintenance</li>
+            </ul>
+          </div>
+        
+        </div>
+
+        <h3>Qu'est-ce qu'une machine Virtuelle</h3>
+        <div class="machine-virtuelle">
+          <p>
+            Une machine virtuelle ou VM (Virtual Machine), est une machine qui n’est pas physique :  c’est a dire, qui n’est pas constituée de ressources physiques. Pour fonctionner, une machine a besoin de 4 types de ressources : une CPU ; une mémoire (RAM) ; un stockage (disque dur) ; un réseau (optionnel). Pour fonctionner sans ressources la VM utilise les ressources d’une machine physique sur laquelle elle est installée : la machine hôte. Le principe de la virtualisation repose donc sur le partage de ressources.
+          </p>
+          <!-- image sur la machine virtuelle -->
+          <img src="www/machine-virtuelle.png" alt="Machine virtuelle">
+        </div>
+
+        <h3>Comment fonctionne la Virtualisation</h3>
+        <div class="fonctionne-virtu">
+          <div class="hyperviseur-mere">
+            <p>
+              La virtualisation consiste à créer plusieurs machines virtuelles (VM) à partir d’une machine physique à l’aide d’un logiciel appelé hyperviseur.
+            </p>
+            <img src="www/hyperviseur.png" alt="Hyperviseur">
+          </div>
+
+          <h4>Qu'est-ce qu'un Hyperviseur ?</h4>
+          <div>
+            <p>
+              Un Hyperviseur est une catégorie d’applications capables de partager les ressources de la machine sur laquelle elles sont installées. L’hyperviseur a 2 rôles majeurs :
+            </p>
+            <ul>
+              <li>Créer des ressources virtuelles propres à chaque VM</li>
+              <li>Répartir ses propres ressources</li>
+            </ul>
+          </div>
+
+          <h4>Les types d'hyperviseurs </h4>
+          <div>
+            <ul>
+              <li>Hyperviseur de type 1 : Virtualisation native / également appelée bar</li>
+              <li>Hyperviseur de type 2 : Virtualisation avec système d'exploitation / également appelé hébergé</li>
+            </ul>
+          </div>
+
+          <div class="hyperviseur1">
+            <div>
+              <p>
+                L’hyperviseur de type 1 ou hyperviseur natif, est, contrairement au type 2, installé directement sur le matériel, sans OS intermédiaire. Cela signifie qu’avec un hyperviseur de type 1, les ressources de l’hôte sont directement gérées par l’hyperviseur et non plus par l’OS qui disparaît ou est relégué au statut de VM. La machine hôte est dédiée à la création de VM et ne sait faire plus que cela.
+              </p>
+              <p>
+                Cet hyperviseur s’utilise dans un contexte très différent de l’hyperviseur de type 2. Ses performances sont bien supérieures, car  il a un accès direct aux ressources (sans passer par un OS) et la totalité des ressources est dédiée aux VM. Les hyperviseurs de type 1 sont utilisés en entreprise pour plusieurs raisons :
+              </p>
+              <ul>
+                <li>réduire les coûts matériels et de maintenance</li>
+                <li>optimiser les ressources physiques</li>
+                <li>répartir la charge dynamiquement</li>
+                <li>permettre la haute disponibilité des serveurs</li>
+                <li>créer des VM de préproduction pour les tester la phase production</li>
+              </ul>
+            </div>
+            <img src="www/hyp1.png" alt="hyperviseur 1">
+          </div>
+
+          <div class="hyperviseur2">
+            <div>
+              <p>
+                L’hyperviseur de type 2, ou hosted hypervisor (hyperviseur hébergé), est le plus facile à mettre en place. Il s’installe simplement comme n’importe quelle application sur le système et permet, une fois installé, de créer des VM indépendantes de l’OS hôte. Chaque VM est autorisée, par l’hyperviseur, à utiliser une certaine quantité de ressources (définie au départ) et ne peut donc pas dépasser cette limite. L’OS hôte ne pourra donc pas être ralenti par les VM, si elles ont été configurées raisonnablement.
+              </p>
+              <p>
+                L’utilisation d’un hyperviseur de type 2 peut répondre aux besoins du type :
+              </p>
+              <ul>
+                <li>tester un OS sans formater sa machine physique</li>
+                <li>tester ou utiliser régulièrement une application sur un OS en particulier</li>
+                <li>simuler une deuxième machine et faire des tests de communication simples</li>
+                <li>créer un petit réseau de plusieurs VM pour tester des protocoles ou autre</li>
+              </ul>
+            </div>
+            <img src="www/hyp2.png" alt="hyperviseur 2">
+          </div>
+
+        </div>
+
+        <h3>Quels sont les différents types de Virtualisation</h3>
+        <div class="diff-virtu">
+          <div>
+            <div>
+              <h4>Virtualisation des serveurs</h4>
+              <p>
+                La virtualisation de serveurs utilise un hyperviseur pour diviser des serveurs physiques en plusieurs serveurs virtuels, chacun exécutant son propre système d’exploitation. On peut ainsi exploiter toute la puissance des serveurs physiques afin de réduire considérablement les coûts.
+              </p>
+            </div>
+
+            <div>
+              <h4>Virtualisation des postes</h4>
+              <p>
+                La virtualisation des postes de travail est une méthode qui simule un environnement de travail accessible depuis un terminal connecté à distance. Ainsi les entreprises peuvent permettre aux utilisateurs de travailler n’importe ou avec une connexion réseau, en utilisant n’importe quel appareil ou OS.
+              </p>
+            </div>
+
+          </div>
+        
+          <div>
+
+            <div>
+              <h4>Virtualisation de réseau</h4>
+              <p>
+                La virtualisation du stockage est le processus de regroupement du stockage physique à partir de plusieurs périphériques de stockage réseau afin qu’il ressemble à un seul périphérique de stockage. Cela permet d’avoir du stockage virtuel facilitant l’adaptation de la capacité de stockage en fonction des besoins.
+              </p>
+            </div>
+
+            <div>
+              <h4>Virtualisation de stockage</h4>
+              <p>
+                La virtualisation du réseau consiste à combiner des ressources réseau matérielles et logicielles dans une seule unité administrative. L’objectif de la virtualisation du réseau est de fournir aux systèmes et utilisateurs un partage efficace, contrôlé et sécurisé des ressources réseau.
+              </p>
+            </div>
+          </div>
+          
+          <div>
+
+            <div>
+              <h4>Virtualisation de données</h4>
+              <p>
+                La virtualisation de données permet à une application d’accéder aux données et de les exploiter sans avoir besoin des détails sur l’emplacement physique ou le format de ces données et ce grâce un logiciel qui intègre et visualise virtuellement ces données au travers d’un tableau de bord, permettant aux utilisateurs d’accéder à de grands ensembles de données depuis un point unique.
+              </p>
+            </div>
+
+            <div>
+              <h4>Virtualisation d'applications</h4>
+              <p>
+                Avec la virtualisation d’applications, les utilisateurs peuvent exécuter des applications sous une forme distincte, indépendamment du système d’exploitation utilisé. Cela permet notamment d’exécuter une application Microsoft Windows sur un système d’exploitation Linux ou Mac.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Quels sont les avantages de la Virtualisation</h3>
+        <div class="avantages-virtu">
+          <h4>Flexibilité</h4>
+          <div>
+            <p>
+              La virtualisation offre à une plus grande souplesse dans la façon dont elle teste et attribue les ressources. Sauvegarder et restaurer des machines virtuelles est simple a faire ce qui permet de tester et  d’expérimenter facilement de nouvelles technologies.
+            </p>
+            <img src="www/flex.png" alt="flexibilité">
+          </div>
+
+          <h4>Fiabilité</h4>
+          <div>
+            <p>
+              La technologie de virtualisation nous permet de sauvegarder et de récupérer aisément nos données en cas de perte.
+            </p>
+            <img src="www/fiabilité.png" alt="fiabilité">
+          </div>
+
+          <h4>Efficacité</h4>
+          <div>
+            <p>
+              La virtualisation nous permet d’avoir une seule machine physique au service de plusieurs machines virtuelles. Cela signifie non seulement que nous avons besoin de moins de serveurs, mais aussi que nous pouvons utiliser ceux que nous avons au plus fort de leur capacité.
+            </p>
+            <img src="www/efficacite.jpeg" alt="efficacité">
+          </div>
+        
+        </div>
+
+      </div>
+
+
+      <!-- Flux RSS -->
+      <h1 class="titre-page">Flux RSS</h1>
+      <div class="titre-actif">
+        <h2 class="sous-titre">Flux RSS de la virtualisation</h2>
+        <div class="flux-rss">
+          <ul>
+            <li>
+              <a href="http://www.oameri.com/veeam-restaurer-un-fichier-depuis-une-vm-linux/" target="_blank">
+                Veeam : Restaurer un fichier depuis une VM Linux
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2022-10-25</p>
+            <li>
+              <a href="http://www.oameri.com/veeam-one-suppression-automatique-des-snapshots-sur-vmware/" target="_blank">
+                Veeam One : Suppression automatique des Snapshots sur VMware
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2022-10-10</p>
+            <li>
+              <a href="http://www.oameri.com/installation-et-configuration-initiale-veeam-one/" target="_blank">
+                Installation et configuration initiale Veeam One
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2022-01-26</p>
+            <li>
+              <a href="http://www.oameri.com/veeam-enterprise-manager-installation-et-configuration-initiale/" target="_blank">
+                Veeam Enterprise Manager: Installation et configuration initiale
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2022-01-07</p>
+            <li>
+              <a href="http://www.oameri.com/virtualbox-installation-et-creation-de-votre-1ere-machine-virtuelle/" target="_blank">
+                Virtualbox: installation et création de votre 1ère machine virtuelle
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2021-02-07</p>
+            <li>
+              <a href="http://www.oameri.com/veeam-sauvegarder-et-restaurer-des-objets-active-directory/" target="_blank">
+                Veeam: Sauvegarder et restaurer des objets Active Directory
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2020-11-22</p>
+            <li>
+              <a href="http://www.oameri.com/veeam-10-ajouter-un-vcenter-a-linventaire/" target="_blank">
+                Veeam 10: Ajouter un vCenter à l’inventaire
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2020-11-09</p>
+            <li>
+              <a href="http://www.oameri.com/veeam-creer-vtl-quadstore-configurer-veeam-sauvegarde-bande-virtuelle/" target="_blank">
+                Veeam: Créer un VTL avec Quadstore et configurer Veeam pour la sauvegarde sur bande virtuelle
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2020-04-15</p>
+            <li>
+              <a href="http://www.oameri.com/installation-veeam-backup-recovery-v10/" target="_blank">
+                Installation Veeam Backup & Recovery v10
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2020-03-29</p>
+            <li>
+              <a href="http://www.oameri.com/vmware-deployer-un-vcsa-6-7/" target="_blank">
+                VMware: Déployer un vCSA 6.7
+              </a>
+            </li>
+            <p>Source: oameri.com (Virtualisation) Published on 2020-01-19</p>
+            <li>
+              <a href="https://vmblog.com/archive/2022/12/20/quali-2023-predictions-4-predictions-that-will-impact-the-cloud-and-infrastructure-market-in-2023.aspx" target="_blank">
+                Quali 2023 Predictions: 4 Predictions That Will Impact the Cloud and Infrastructure Market in 2023
+              </a>
+            </li>
+            <p>Source: blogs.vmware.com(Virtualisation) Published on 2022-12-20</p>
+            <li>
+              <a href="https://vmblog.com/archive/2022/12/20/forgerock-2023-predictions-five-data-privacy-and-security-predictions.aspx" target="_blank">
+                ForgeRock 2023 Predictions: Five Data Privacy and Security Predictions
+              </a>
+            </li>
+            <p>Source: blogs.vmware.com(Virtualisation) Published on 2022-12-20</p>
+            <li>
+              <a href="https://vmblog.com/archive/2022/12/20/isc-2-2023-predictions-what-to-expect-in-the-worlds-of-cyber-insurance-quantum-computing-wiperware-ot-security-and-the-recession.aspx" target="_blank">
+                (ISC)2 2023 Predictions: What to Expect in the Worlds of Cyber Insurance, Quantum Computing, Wiperware, OT Security and the Recession
+              </a>
+            </li>
+            <p>Source: blogs.vmware.com(Virtualisation) Published on 2022-12-20</p>
+            <li>
+              <a href="https://vmblog.com/archive/2022/12/20/when-deals-are-not-enough-new-cisco-appdynamics-survey-finds-bad-digital-experience-is-the-dealbreaker-for-holiday-shoppers.aspx" target="_blank">
+                When Deals Are Not Enough: New Cisco AppDynamics Survey Finds Bad Digital Experience is the Dealbreaker for Holiday Shoppers
+              </a>
+            </li>
+            <p>Source: blogs.vmware.com(Virtualisation) Published on 2022-12-20</p>
+            <li>
+              <a href="https://vmblog.com/archive/2022/12/20/librestream-2023-predictions-tech-adoption-to-face-the-skills-gap-in-the-field.aspx" target="_blank">
+                Librestream 2023 Predictions: Tech Adoption to Face the Skills Gap in the Field
+              </a>
+            </li>
+            <p>Source: blogs.vmware.com(Virtualisation) Published on 2022-12-20</p>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <footer>

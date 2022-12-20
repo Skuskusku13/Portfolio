@@ -1,0 +1,159 @@
+h1.titre-page:last-of-type {
+    margin-top: 40px;
+}
+
+h1.titre-page::after {
+    content: "⬇︎";
+    font-size: large;
+    margin-left: 10px;
+}
+
+h1.titre-page.active::after {
+    content: "⬆︎";
+    font-size: large;
+}
+
+h1.titre-page.active + .titre-actif {
+    display: block;
+    padding-left: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titre-actif {
+    display: none;
+}
+
+h2 {margin-top: 30px;}
+
+h3 {
+    font-family: 'Grenze Gotisch', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-family: 'Grenze Gotisch', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+h4 + div{
+    margin-top: 10px;
+}
+
+h3 + p {
+    margin-top: 20px;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main ul li {
+    padding: 2px 5px;
+    font-family: 'Arima', sans-serif;
+}
+
+main ul li::before {
+    content: "-  ";
+}
+
+.exemples {
+    display: flex;
+    justify-content: space-around;
+}
+
+.machine-virtuelle {
+    display: flex;
+}
+
+.machine-virtuelle p {
+    margin-right: 5px;
+}
+
+.machine-virtuelle img {
+    object-fit: contain;
+    width: 300px;
+    margin-left: 15px;
+}
+
+.hyperviseur-mere {
+    display: flex;
+}
+
+.hyperviseur-mere p {
+    margin: auto 0;
+}
+
+.hyperviseur1, .hyperviseur2 {
+    display: flex;
+    margin: 25px 0;
+}
+
+.hyperviseur2 {
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+.hyperviseur2 img {
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.hyperviseur1 img {
+    object-fit: contain;
+    margin-left: 15px;
+    margin-bottom: auto;
+}
+
+.fonctionne-virtu img {
+    width: 300px;
+    margin-left: 15px;
+}
+
+.diff-virtu {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.diff-virtu h4 {
+    text-align: center;
+}
+
+.diff-virtu div div {
+    padding: 5px;
+}
+
+.avantages-virtu h4:first-of-type {
+    margin-top: 20px;
+}
+
+.avantages-virtu div {
+    display: flex;
+}
+
+.avantages-virtu div p {
+    margin: auto 0;
+}
+
+.avantages-virtu img {
+    object-fit: contain;
+    width: 300px;
+}
+
+
+/* flux rss */
+
+.flux-rss  a {
+    font-weight: 800;
+    text-decoration: none;
+    color: #286b8a;
+}
+
+.flux-rss  p {
+    font-weight: 300;
+    color: #000000CF;
+}
