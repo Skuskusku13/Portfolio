@@ -10,6 +10,11 @@ p, li, a {
     margin: 30px 0;
 }
 
+.main-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .main-list section {
     padding: 10px;
     margin: 10px 0;
