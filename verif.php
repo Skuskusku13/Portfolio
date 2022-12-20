@@ -33,7 +33,7 @@
   </header>
 
   <div class="place-colors">
-      <a class="colors lightmode">DARK</a>
+    <a class="colors lightmode">DARK</a>
   </div>
 
   <main style="margin-top: 100px;">
@@ -48,7 +48,7 @@
 
       if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo '<a id="valid-email"
-                 href="mailto:danlevy149@gmail.com?subject='. $sujet .' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '">
+                 href="mailto:danlevy149@gmail.com?subject=' . $sujet . ' / ' . $tel . ' / ' . $nom . '&body=' . $mess . '">
           Confirmez l\'envoie du mail en cliquant ici
         </a>';
       } else {
@@ -61,6 +61,15 @@
       <a href="index.html">Retourner à la page d'accueil</a>
     </p>
   </main>
+
+  <footer>
+    <div>
+      <p class="copyright">© DAN LEVY</p>
+      <p class="contact-me"><a href="tel:+33781267866">Téléphone</a></p>
+      <p class="contact-me"><a href="contact.html">Me contacter</a></p>
+      <p class="contact-me"><a href="https://github.com/Skuskusku13" target="_blank">Github</a></p>
+    </div>
+  </footer>
 </body>
 
 </html>

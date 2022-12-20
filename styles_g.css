@@ -175,12 +175,16 @@ body.dark footer {
 
 footer div {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
 }
-/* 
-footer div p {
-    font-family: 'Grenze Gotisch', sans-serif;
-} */
+
+footer div p a {
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+} 
 
 
 /* FIN FOOTER */
