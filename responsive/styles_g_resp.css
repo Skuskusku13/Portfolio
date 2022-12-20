@@ -1,9 +1,9 @@
 @media screen and (max-width: 375px) {
-    
+
     main {
         padding: 0 10px;
     }
-    
+
     /* NAVBAR */
 
     header .menu-principal {
@@ -68,6 +68,12 @@
 
     /* FINDARKTHEME */
 
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 14px;
+    }
 }
 
 
@@ -152,6 +158,12 @@
     }
 
     /* FINDARKTHEME */
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 14px;
+    }
 }
 
 
@@ -237,6 +249,12 @@
 
     /* FINDARKTHEME */
 
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 15px;
+    }
 }
 
 
@@ -312,6 +330,12 @@
     }
 
     /* FINDARKTHEME */
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 15px;
+    }
 }
 
 
@@ -387,6 +411,13 @@
     }
 
     /* FINDARKTHEME */
+
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 16px;
+    }
 }
 
 
@@ -464,4 +495,11 @@
     }
 
     /* FINDARKTHEME */
+
+
+    /* FOOTER */
+
+    footer p, footer a {
+        font-size: 16px;
+    }
 }

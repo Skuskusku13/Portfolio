@@ -70,6 +70,8 @@
       <p class="contact-me"><a href="https://github.com/Skuskusku13" target="_blank">Github</a></p>
     </div>
   </footer>
+
+  <script src="js/script.js" defer></script>
 </body>
 
 </html>
