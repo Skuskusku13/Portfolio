@@ -1,4 +1,8 @@
 h1.titre-page {
+    margin-bottom: 30px;
+}
+
+h2.titre-veille {
     max-width: 1400px;
     margin: 0 auto 50px auto;
     box-shadow: 2px 2px 10px 12px rgba(150, 150, 150, 0.131);
@@ -6,7 +10,7 @@ h1.titre-page {
     border-radius: 5px;
 }
 
-body.dark h1.titre-page {
+body.dark h2.titre-veille {
     box-shadow: 2px 2px 10px 12px rgba(139, 126, 126, 0.131);
     max-width: 1400px;
     margin: 0 auto 50px auto;
@@ -14,22 +18,26 @@ body.dark h1.titre-page {
     border-radius: 5px;
 }
 
-h1.titre-page:last-of-type {
+h2.titre-veille {
+    font-family: 'Grenze Gotisch', sans-serif;
+}
+
+h2.titre-veille:last-of-type {
     margin-top: 40px;
 }
 
-h1.titre-page::after {
+h2.titre-veille::after {
     content: "⬇︎";
     font-size: large;
     margin-left: 10px;
 }
 
-h1.titre-page.active::after {
+h2.titre-veille.active::after {
     content: "⬆︎";
     font-size: large;
 }
 
-h1.titre-page.active + .titre-actif {
+h2.titre-veille.active + .titre-actif {
     display: block;
     padding-left: 20px;
     max-width: 1200px;

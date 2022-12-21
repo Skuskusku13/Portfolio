@@ -110,7 +110,7 @@ if (window.location.pathname == "/projets.html") {
 // page de veilles
 
 if (window.location.pathname == "/veilles.html") {
-  let veilleTitle = document.querySelectorAll(".titre-page");
+  let veilleTitle = document.querySelectorAll(".titre-veille");
 
   veilleTitle.forEach(elt => {
     elt.addEventListener("click", () => {
