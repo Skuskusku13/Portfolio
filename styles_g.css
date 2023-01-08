@@ -1,13 +1,19 @@
 /* police de titre */
 @font-face {
     font-family: 'Grenze Gotisch';
-    src: url("fonts/GrenzeGotisch-VariableFont_wght.ttf") format("truetype");
+    src: url("fonts/GrenzeGotisch-VariableFont_wght.ttf") format("truetype"),
+         url("fonts/GrenzeGotisch-VariableFont_wght.otf") format("opentype"),
+         url("fonts/GrenzeGotisch-VariableFont_wght.woff") format("woff"),
+         url("fonts/GrenzeGotisch-VariableFont_wght.woff2") format("woff2");
 }
 
 /* police de corps */
 @font-face {
     font-family: 'Arima';
-    src: url("fonts/Arima-VariableFont_wght.ttf") format("truetype");
+    src: url("fonts/Arima-VariableFont_wght.ttf") format("truetype"),
+         url("fonts/Arima-VariableFont_wght.otf") format("opentype"),
+         url("fonts/Arima-VariableFont_wght.woff") format("woff"),
+         url("fonts/Arima-VariableFont_wght.woff2") format("woff2");
 }
 
 *, ::before, ::after {
