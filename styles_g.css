@@ -1,13 +1,5 @@
 /* police de titre */
 @font-face {
-    font-family: 'Grenze Gotisch';
-    src: url("fonts/GrenzeGotisch-VariableFont_wght.ttf") format("truetype"),
-         url("fonts/GrenzeGotisch-VariableFont_wght.otf") format("opentype"),
-         url("fonts/GrenzeGotisch-VariableFont_wght.woff") format("woff"),
-         url("fonts/GrenzeGotisch-VariableFont_wght.woff2") format("woff2");
-}
-
-@font-face {
     font-family: 'Butler';
     src: url("fonts/Butler_Regular_Stencil.otf") format("opentype"),
          url("fonts/Butler.woff") format("woff"),
@@ -74,11 +66,11 @@ body.dark {
 
 body.dark .menu-principal {
     transition: 0.5s ease-in-out;
-    background-color: #18475c87;
     color: aliceblue;
     width: 100%;
     /*  pour le js */
 }
+
 
 body, html {
     height: 100%;
@@ -86,20 +78,8 @@ body, html {
 
 
 h1.titre-page, h2.sous-titre, h3.titre-lambda {
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
 }
-
-/* .titre-page {
-    font-size: 2.7em;
-}
-
-.sous-titre {
-    font-size: 2em;
-}
-
-.titre-lambda {
-    font-size: 1.5;
-} */
 
 p {
     font-family: 'Arima', sans-serif;
@@ -131,7 +111,7 @@ header .menu-principal .menu li {
 header .menu-principal .menu li a {
     text-decoration: none;
     color: aliceblue;
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
 }
 
 header .menu-principal i {

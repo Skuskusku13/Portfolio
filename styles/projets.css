@@ -1,4 +1,4 @@
-/* font-family: 'Grenze Gotisch', cursive;  TITRE*/
+/* font-family: 'Butler', cursive;  TITRE*/
 /* font-family: 'Arima', cursive;  CORPS*/
 
 h2.sous-titre {
@@ -92,7 +92,7 @@ body.dark .projets {
 }
 
 .pc-tab ul li label {
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Butler', cursive;
     float: left;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -141,7 +141,7 @@ body.dark .pc-tab section .divi {
 
 .pc-tab section .divi h2 {
     margin: 0;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Butler', cursive;
     letter-spacing: 1px;
     color: #34495e;
 }
@@ -204,7 +204,7 @@ legend {
     margin-top: 30px;
     margin-bottom: 30px;
     cursor: pointer;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Butler', cursive;
 }
 
 body.dark .project-title-coll {

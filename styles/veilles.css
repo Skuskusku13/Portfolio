@@ -19,7 +19,7 @@ body.dark h2.titre-veille {
 }
 
 h2.titre-veille {
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
 }
 
 h2.titre-veille:last-of-type {
@@ -51,13 +51,13 @@ h2.titre-veille.active + .titre-actif {
 h2 {margin-top: 30px;}
 
 h3 {
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
 h4 {
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 17px;

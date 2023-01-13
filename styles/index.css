@@ -18,17 +18,10 @@ h2.sous-titre {
     margin: 0 20px;
 }
 
-/* body .git-logo.git-white {
-    display: none;
+body.dark .git-logo.git-logo-noir {
+    transition: 0.3s ease-in;
+    filter: invert(1);
 }
-
-body.dark .git-logo.git-noir {
-    display: none;
-}
-
-body.dark .git-logo .git-white {
-    display: none;
-} */
 
 .main-cards {
     padding: 5px;
@@ -65,7 +58,7 @@ body.dark .main-cards .card-child {
     color: aliceblue;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
     font-size: 1.2em;
 }
 

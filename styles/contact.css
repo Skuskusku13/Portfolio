@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    font-family: 'Grenze Gotisch', sans-serif;
+    font-family: 'Butler', sans-serif;
 }
 
 p#Error {
@@ -31,7 +31,7 @@ td {
 input[type=submit], input[type=reset] {
     background-color: #18475c;
     color: aliceblue;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Butler', cursive;
     font-size: 1.2em;
 }
 
@@ -54,7 +54,7 @@ a#valid-email, .return-index {
     text-decoration: none;
     padding: 10px;
     color: aliceblue;
-    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Butler', cursive;
     font-size: 1.2em;
     border-radius: 10px;
     width: max-content;
