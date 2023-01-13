@@ -7,6 +7,13 @@
          url("fonts/GrenzeGotisch-VariableFont_wght.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: 'Butler';
+    src: url("fonts/Butler_Regular_Stencil.otf") format("opentype"),
+         url("fonts/Butler.woff") format("woff"),
+         url("fonts/Butler.woff2") format("woff2");
+}
+
 /* police de corps */
 @font-face {
     font-family: 'Arima';
