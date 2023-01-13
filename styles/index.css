@@ -53,7 +53,7 @@ body.dark .main-cards .card-child {
 }
 
 .card-link a {
-    padding: 0 10px;
+    padding: 3px 10px;
     background-color: #18475c;
     color: aliceblue;
     border-radius: 5px;
