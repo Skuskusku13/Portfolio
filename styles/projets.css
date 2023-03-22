@@ -63,7 +63,9 @@ body.dark .projets {
 #tab13:checked~section .tab13,
 #tab14:checked~section .tab14,
 #tab16:checked~section .tab16,
-#tab17:checked~section .tab17 {
+#tab17:checked~section .tab17,
+#tab19:checked~section .tab19,
+#tab20:checked~section .tab20 {
     display: block;
 }
 
@@ -72,7 +74,8 @@ body.dark .projets {
 #tab9:checked~section .tab9,
 #tab12:checked~section .tab12,
 #tab15:checked~section .tab15, 
-#tab18:checked~section .tab18 {
+#tab18:checked~section .tab18,
+#tab21:checked~section .tab21 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -163,7 +166,10 @@ body.dark .pc-tab section .divi {
 #tab15:checked~nav .tab15 label,
 #tab16:checked~nav .tab16 label,
 #tab17:checked~nav .tab17 label,
-#tab18:checked~nav .tab18 label {
+#tab18:checked~nav .tab18 label,
+#tab19:checked~nav .tab19 label,
+#tab20:checked~nav .tab20 label,
+#tab21:checked~nav .tab21 label {
     background: aliceblue;
     color: #18475c;
     position: relative;
@@ -188,7 +194,8 @@ legend {
 .pc-tab .tab9.divi a,
 .pc-tab .tab12.divi a,
 .pc-tab .tab15.divi a,
-.pc-tab .tab18.divi a {
+.pc-tab .tab18.divi a,
+.pc-tab .tab21.divi a {
     margin: 10px 20px;
     text-decoration: none;
     background-color: #34495e;
